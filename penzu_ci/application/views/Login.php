@@ -5,36 +5,23 @@
     <title>Login</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="assets\Login.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="d-flex flex-column align-items-center">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#">Disabled</a>
-                </li>
-            </ul>
-        </div>
+    <nav class="navbar navbar-light" id="Bg">
+        <a class="navbar-brand mx-auto pl-5"><img src="assets\img\penzu_white.png" id="A"></a>
+        <form class="form-inline">
+            <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
+            <a href="#"> <button class="btn" type="button" style="color:white;">Sign up</button></a>
+        </form>
     </nav>
-    <div class="container" style="width:500px">
+    <div class="container-fluid mt-5 pt-5 " id="bungkus">
+    <div class="container mx-auto my-auto " id="form">
         <form>
-            <h3> Sign In </h3>
+            <center>
+                <h3> Sign In </h3>
+            </center>
             <div class="form-group">
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
                     placeholder="Enter email">
@@ -43,10 +30,12 @@
             <div class="form-group">
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
                 <label for="exampleInputPassword1">Password</label>
-            </div>  
+            </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+    </div>
+    
 </body>
 
 </html>
