@@ -1,0 +1,77 @@
+.part1{
+}
+
+
+#logomain{
+    height : 60px;
+    width : 209px;
+    max-width : 100%;
+    display : block;
+}
+
+p{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 18px;
+    font-weight : 600;
+    line-height : 19.8px;
+    text-align : center;
+    word-spacing : 0px;
+    color :  #8E8E93;
+    height : 19px;
+    width : 1349px;
+    margin : -20px 0 20px 0;
+    display : block;
+}
+
+.logoplus{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 16px;
+    line-height : 20.8px;
+    text-decoration : none solid rgb(75, 82, 91);
+    text-align : center;
+    padding-top: 7%;
+}
+
+
+.firstlog{
+    color :  #8E8E93;
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    line-height : 14px;
+    text-align : center;
+    white-space : nowrap;
+    word-spacing : 0px;
+    height : 30px;
+    width : 153.891px;
+    position : absolute;
+    top : 10px;
+    bottom : 3964.94px;
+    right : 10px;
+    left : 1185.11px;
+    display : block;
+}
+
+#btnsignup{
+    font-family : "Open Sans", helvetica, sans-serif;
+font-size : 18px;
+font-weight : 600;
+line-height : 18px;
+text-decoration : none solid rgb(255, 255, 255);
+text-align : center;
+vertical-align : middle;
+white-space : nowrap;
+word-spacing : 0px;
+background-color :  #007BFF;
+background-position : 0% 0%;
+color :  #FFFFFF;
+height : 56px;
+width : 370px;
+border : 1px solid  #FFFFFF;
+padding : 18px 50px 18px 50px;
+display : block;
+cursor : pointer;
+transform : none;
+transition : color 0.15s ease-in-out 0s, background-color 0.15s ease-in-out 0s, border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+box-sizing : border-box;
+
+}
