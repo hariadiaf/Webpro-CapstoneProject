@@ -10,7 +10,7 @@
 
 <body>
     <nav class="navbar navbar-light" id="Bg">
-        <a class="navbar-brand mx-auto pl-5"><img src="assets\img\penzu_white.png" id="A"></a>
+        <a class="navbar-brand mx-auto pl-5"><img id="logotgh" src="assets\img\penzu_white.png" id="A"></a>
         <form class="form-inline">
             <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
             <a href="#"> <button class="btn" type="button" style="color:white;">Sign up</button></a>
