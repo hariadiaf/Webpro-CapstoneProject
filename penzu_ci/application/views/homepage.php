@@ -16,29 +16,48 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <body>
     <div class="firstlog">
-        <a class="btn" href="/view/login" target="_self">Log in</a>
-        <a class="btn" href="" ng-click="$ctrl.openSignupModal()">Sign up</a>    
+        <a class="btn a-firstlog" href="/view/login" target="_self">Log in</a>
+        <a class="btn a-firstlog" href="" ng-click="$ctrl.openSignupModal()">Sign up</a>    
     </div>
     <div class="part1" style='background-image : url("assets/img/background-desk.jpg") !important;
-      background-position: center;
-    background-repeat : no-repeat;
-    background-size: cover;
-    height : 846.594px;
-    width : 1349px;
-    display : block;
-    overflow : hidden;'>
+        background-position: 50% 98%;
+        background-repeat : no-repeat;
+        background-size: cover;
+        height : 846.594px;
+        width : 1349px;
+        display : block;
+        overflow : hidden;'>
         <div class="container logoplus">
             <center>
                 <img id="logomain" src="assets/img/pz-logo__red.png" alt=""> <br>   
-                Your private, 100% customizable online journal.<br>
-                Loved by over 2 million writers around the world. <br><br><br>
+                <p id="tagline">Your private, 100% customizable online journal.<br>
+                Loved by over 2 million writers around the world.
+                </p>
                 <a class="btn btn-block btn-primary" id="btnsignup" href="" style="">Start Your Free Journal Now!</a>
             </center>
         </div>
     </div>
-    <div class="container sponsored">
-            <p>Loved by more than 2,000,000 writers, featured on...</p>
+    
+    <p id="featured">Loved by more than 2,000,000 writers, featured on...</p>
+    <div class="container">
+    <div class="row">
+        <div class="col-sm">
+        One of three columns
         </div>
+        <div class="col-sm">
+        One of three columns
+        </div>
+        <div class="col-sm">
+        One of three columns
+        </div>
+        <div class="col-sm">
+        One of three columns
+        </div>
+        <div class="col-sm">
+        One of three columns
+        </div>
+    </div>
+</div>
     
 </body>
 
