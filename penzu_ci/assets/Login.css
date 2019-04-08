@@ -21,20 +21,33 @@
     height : 27px;
     width : 91.5px;
     margin : 0 0 0 -46px;
-}
-
-#A {
     width: 100px;
 }
 
+
 #B {
-    border-radius: 3px;
-    font-size: 14px;
-    line-height: 1em;
-    background: #fff;
-    color: #e74c3c;
-    text-decoration: none;
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    font-weight : 700;
+    line-height : 14px;
+    text-align : center;
+    background-color :  #FFFFFF;
+    color: #f23f21;
+    padding : 6px 8px 6px 8px;
 }
+
+#C {
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 13px;
+    font-weight : 600;
+    line-height : 19.6px;
+    text-decoration : underline solid rgb(255, 255, 255);
+    color :  #FFFFFF;
+    height : 31px;
+    width : 73.5313px;
+    padding : 6px 8px 6px 16px;
+}
+
 #bungkus {
     overflow: hidden;
     height: 650px;
@@ -53,7 +66,72 @@
     margin: 0 -50px 30px;
 }
 body {
-    background-image: url("assets/img/wood.jpg");
+    background-image: url("../assets/img/wood.jpg");
 
 }
 
+h3 {
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 20px;
+    font-weight : 300;
+    line-height : 22px;
+    text-decoration : none solid rgb(75, 82, 91);
+    text-align : center;
+    word-spacing : 0px;
+}
+
+#signin{
+    background-color: #F5F5F5;
+    height : 63px;
+    width : 540px;
+    border-bottom : 1px solid  #E6E6E6;
+    padding : 20px 50px 20px 50px;
+    margin-top: -4.6%;
+    margin-left: -11.3%;
+}
+
+#form {
+    background-color: #FFFFFF;
+    height : 379px;
+width : 540px;
+margin : 30px 405px 50px 405px;
+max-width : 540px;
+}
+
+#label {
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    letter-spacing : 1.4px;
+    line-height : 19.6px;
+    text-transform : uppercase;
+    background-color :  #FFFFFF;
+    color : #9098A5
+}
+
+#buton {   
+    margin-top: -10%; 
+    margin-left: 50%;
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    font-weight : 600;
+    line-height : 14px;
+    text-align : center;
+    background-color :  #3498DB;
+    color :  #FFFFFF;
+    height : 41.2847px;
+    width : 220px;
+    padding : 13px 16px 13px 16px;
+}
+
+#formemail {
+    padding-top: 5%;
+   
+}
+
+.form-control {
+    height : 48px;
+width : 440px;
+border : 1px solid  #9FA4AA;
+margin : 0 0 10px 0;
+padding : 8px 10px 8px 10px;
+}

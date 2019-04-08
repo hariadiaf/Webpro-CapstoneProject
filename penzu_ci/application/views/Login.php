@@ -10,32 +10,35 @@
 
 <body>
     <nav class="navbar navbar-light" id="Bg">
-        <a class="navbar-brand mx-auto pl-5"><img id="logotgh" src="assets\img\penzu_white.png" id="A"></a>
+        <a class="navbar-brand mx-auto pl-5"><img src="assets\img\penzu_white.png" id="logotgh"></a>
         <form class="form-inline">
             <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
-            <a href="#"> <button class="btn" type="button" style="color:white;">Sign up</button></a>
+            <a href="#"> <button class="btn" type="button" id="C">Sign up</button></a>
         </form>
     </nav>
     <div class="container-fluid mt-5 pt-5 " id="bungkus">
-    <div class="container mx-auto my-auto " id="form">
-        <form>
+        <div class="container mx-auto my-auto " id="form">
             <center>
-                <h3> Sign In </h3>
+                <div id="signin">
+                    <h3> Sign In </h3>
+                </div>
             </center>
-            <div class="form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <label for="exampleInputEmail1">Email address</label>
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-                <label for="exampleInputPassword1">Password</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
+            <form>
+                <div id="formemail" class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label id="label" for="exampleInputEmail1">EMAIL ADDRESS</label>
+                </div>
+                <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <label id="label" for="exampleInputPassword1">PASSWORD</label>
+                </div>
+                <a href="#">Forget your password?</a> <button id="buton" type="submit" class="btn btn-primary">Sign
+                    In</button>
+
+            </form>
+        </div>
     </div>
-    </div>
-    
+
 </body>
 
 </html>
