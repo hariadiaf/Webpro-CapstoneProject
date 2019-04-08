@@ -8,6 +8,21 @@
     z-index: 900;
 }
 
+#logotgh{
+    position : absolute;
+    top : 14px;
+    bottom : 9px;
+    right : 628.75px;
+    left : 674.5px;
+    display : block;
+    height : 27px;
+    width : 91.5px;
+    margin : 0 0 0 -46px;
+    height : 27px;
+    width : 91.5px;
+    margin : 0 0 0 -46px;
+}
+
 #A {
     width: 100px;
 }

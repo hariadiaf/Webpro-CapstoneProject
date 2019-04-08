@@ -1,0 +1,165 @@
+#logomain{
+    height : 60px;
+    width : 209px;
+    max-width : 100%;
+    display : block;
+}
+
+.logos{
+    margin-left: 14.7%;
+}
+
+.paralogo{
+    margin: 20px;
+}
+
+.part2{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 16px;
+    color: #5C5B5B;
+    line-height:21px;
+}
+
+.getstarted{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    font-weight : 500;
+    line-height : 14px;
+    text-decoration : none solid rgb(255, 255, 255);
+    text-align : center;
+    vertical-align : middle;
+    white-space : nowrap;
+    word-spacing : 0px;
+    background-color :  #2386C8;
+    background-position : 0% 0%;
+    color :  #FFFFFF;
+    height : 42px;
+    width : 139.031px;
+    margin : 20px 0 0 0;
+    padding : 13px 30px 13px 30px;
+    display : inline-block;
+}
+
+.getstarted2{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    font-weight : 500;
+    line-height : 14px;
+    text-decoration : none solid rgb(255, 255, 255);
+    text-align : center;
+    vertical-align : middle;
+    white-space : nowrap;
+    word-spacing : 0px;
+    background-color :  #3498DB;
+    background-position : 0% 0%;
+    color :  #FFFFFF;
+    height : 42px;
+    width : 139.031px;
+    margin : 20px 0 0 0;
+    padding : 13px 30px 13px 30px;
+    display : inline-block;
+}
+
+
+.privacy{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 16px;
+    color: #5C5B5B;
+    margin-left: 8%;
+    line-height : 23px;
+}
+
+
+#featured{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 17.45px;
+    font-weight : 600;
+    text-align : center;
+    letter-spacing: 0.55px;
+    color :  #8E8E93;
+    height : 19px;
+    width : 1349px;
+    margin : -20px 0 20px 0;
+    padding-top: 2.7%;
+    padding-bottom: 0.1%;
+    display : block;
+}
+
+#lg-lifehacker{
+    height : 37.3438px;
+    width : 149.406px;
+}
+
+#lg-gigaom{
+    height : 37.3438px;
+    width : 153.141px;
+}
+
+#lg-tnw{
+    height : 37.3438px;
+    width : 88.3906px;
+}
+
+#lg-mash{
+    height : 37.3438px;
+    width : 159.359px;
+}
+
+#lg-rw{
+    height : 37.3438px;
+    width : 201.703px;
+}
+
+.logoplus{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 16px;
+    line-height : 20.8px;
+    color: #4B5968;
+    text-align : center;
+    padding-top: 7.4%;
+}
+
+#tagline{
+    padding-bottom: 1.5%;
+}
+
+.a-firstlog{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 13.75px;
+    text-align : center;
+    white-space : nowrap;
+    letter-spacing: 0.2px;
+    word-spacing : 2px;
+    color :  #8E8E93;
+    height : 25px;
+    padding-top: 4.5px;
+    padding-left: 12px;
+    display : inline-block;
+    cursor : pointer;
+}
+
+.firstlog{
+position : absolute;
+right: 12px;
+top : 8px;
+display : block;
+}
+
+
+#btnsignup{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 18px;
+    letter-spacing: 0.1px;
+    font-weight : 500;
+    line-height : 18px;
+    text-decoration : none solid rgb(255, 255, 255);
+    text-align : center;
+    background-color :  #3498DB;
+    color :  #FFFFFF;
+    height : 56px;
+    width : 370px;
+    padding : 18px 50px 18px 50px;
+    display : block;
+    cursor : pointer;
+    box-sizing : border-box;
+}
