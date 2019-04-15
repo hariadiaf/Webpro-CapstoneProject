@@ -19,6 +19,18 @@
     max-width: 952px;
 }
 
+.title-features{
+    font-family : "Open Sans", helvetica, sans-serif; font-size : 20px; font-weight : 700; line-height : 22px; color: #38404F; padding-top: 5%;
+}
+
+.detail-features{
+    font-size : 18x; line-height : 24px; text-align : -webkit-center; color :  rgb(115, 122, 118); padding-bottom: 1px;
+}
+
+.kolomfeatures{
+    height : 208px; width : 300.953px;
+}
+
 #penzu-mobile-text{
     margin-left: 646px;
     margin-top: -100px;

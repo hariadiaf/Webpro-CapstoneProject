@@ -27,9 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         $('.navbar:hidden').slideDown();
                     }
                 });
-            
             });
-
         });
         }(jQuery));
     </script>
@@ -117,8 +115,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
         </div>
-        <hr>
-        <br><br>
+        <hr><br><br>
         <center>
             <div class="container part2">
                 <h2 style="padding-bottom: 20px;">What are you writing for?</h2>
@@ -151,53 +148,53 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </div>
         <center>
-        <div class="container" style="margin-left: 13%; margin-top: 1.55%;">
+        <div class="container" style="margin-left: 215px; margin-top: 1.55%;">
         <div class="row" style="padding-bottom: 5%;">
-            <div class="col-">
+            <div class="col- kolomfeatures">
                 <div>
                     <img src="assets/img/feature-icon__security2.png" alt="" style="height : 80px; width : 80px;">
                 </div>
-                <div style='font-family : "Open Sans", helvetica, sans-serif; font-size : 20px; font-weight : 700; line-height : 22px; color: #38404F; padding-top: 5%;'>100% Private</div>
-                <div style='font-size : 16px; line-height : 24px; text-align : -webkit-center; color :  #565C58;'>Designed to focus on privacy, your<br>entries are totally private by default!</div>
+                <div class='title-features'>100% Private</div>
+                <div class='detail-features'>Designed to focus on privacy, your<br>entries are totally private by default!</div>
             </div>
-            <div class="col-">
+            <div class="col- kolomfeatures">
                 <div>
                     <img src="assets/img/feature-icon__mobile.png" alt=""style="height : 80px; width : 80px;">
                 </div>
-                <div style='font-family : "Open Sans", helvetica, sans-serif; font-size : 20px; font-weight : 700; line-height : 22px; color: #38404F; padding-top: 5%;'>Available Everywhere</div>
-                <div style='font-size : 16px; line-height : 24px; text-align : -webkit-center; color :  #565C58;'>Enjoy Penzu on the move. Available<br>for iOS and Android and totally free!</div>
+                <div class='title-features'>Available Everywhere</div>
+                <div class='detail-features'>Enjoy Penzu on the move. Available<br>for iOS and Android and totally free!</div>
             </div>
-            <div class="col-">
+            <div class="col- kolomfeatures">
                 <div>
                     <img src="assets/img/feature-icon__reminder.png" alt=""style="height : 80px; width : 80px;">
                 </div>
-                <div style='font-family : "Open Sans", helvetica, sans-serif; font-size : 20px; font-weight : 700; line-height : 22px; color: #38404F; padding-top: 5%;'>Never Forget to Write</div>
-                <div style='font-size : 16px; line-height : 24px; text-align : -webkit-center; color :  #565C58;'>Custom email reminders help you<br>make sure you never forget to<br>write.</div>
+                <div class='title-features'>Never Forget to Write</div>
+                <div class='detail-features'>Custom email reminders help you<br>make sure you never forget to<br>write.</div>
             </div>
         </div>
         <div class="row" style="padding-bottom: 5%;">
-            <div class="col-">
+            <div class="col- kolomfeatures">
                 <div>
                     <img src="assets/img/feature-icon__customize.png" alt=""style="height : 80px; width : 80px;">
                 </div>
-                <div style='font-family : "Open Sans", helvetica, sans-serif; font-size : 20px; font-weight : 700; line-height : 22px; color: #38404F; padding-top: 5%;'>Fully Customizable Diary</div>
-                <div style='font-size : 16px; line-height : 24px; text-align : -webkit-center; color :  #565C58;'>Make each <span><a href="">journal</a></span> your own with<br>custom covers, backgrounds, and fonts.</div>
+                <div class='title-features'>Fully Customizable Diary</div>
+                <div class='detail-features'>Make each <span><a href="">journal</a></span> your own with<br>custom covers, backgrounds, and<br>fonts.</div>
                 <a class="feature__cta btn btn-primary" href="/pro" target="_self">Learn More</a>
             </div>
-            <div class="col-">
+            <div class="col- kolomfeatures">
                 <div>
                     <img src="assets/img/feature-icon__search.png" alt=""style="height : 80px; width : 80px;">
                 </div>
-                <div style='font-family : "Open Sans", helvetica, sans-serif; font-size : 20px; font-weight : 700; line-height : 22px; color: #38404F; padding-top: 5%;'>Smart Journal Search</div>
-                <div style='font-size : 16px; line-height : 24px; text-align : -webkit-center; color :  #565C58;'>Quickly and easily search through<br>your journals, entries, and tags.</div>
+                <div class='title-features'>Smart Journal Search</div>
+                <div class='detail-features'>Quickly and easily search through<br>your journals, entries, and tags.</div>
                 <a class="feature__cta btn btn-primary" href="/pro" target="_self">Learn More</a>
             </div>
-            <div class="col-">
+            <div class="col- kolomfeatures">
                 <div>
                     <img src="assets/img/feature-icon__security.png" alt=""style="height : 80px; width : 80px;">
                 </div>
-                <div style='font-family : "Open Sans", helvetica, sans-serif; font-size : 20px; font-weight : 700; line-height : 22px; color: #38404F;  padding-top: 5%;'>Military Grade Security</div>
-                <div style='font-size : 16px; line-height : 24px; text-align : -webkit-center; color :  #565C58;'>Further protect your diary with<br>military-grade 256-bit AES encryption.</div>
+                <div class='title-features'>Military Grade Security</div>
+                <div class='detail-features'>Further protect your diary with<br>military-grade 256-bit AES encryption.</div>
                 <a class="feature__cta btn btn-primary" href="/pro" target="_self">Learn More</a>
             </div>
         </div>
