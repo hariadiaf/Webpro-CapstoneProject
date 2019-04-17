@@ -13,7 +13,7 @@
         <a class="navbar-brand mx-auto pl-5"><img src="assets\img\penzu_white.png" id="logotgh"></a>
         <form class="form-inline">
             <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
-            <a href="#"> <button class="btn" type="button" id="C">Sign up</button></a>
+            <a href="<?= base_url("views\Login.php") ?>"> <button class="btn" type="button" id="C">Sign in</button></a>
         </form>
     </nav>
     <div class="container-fluid mt-5 pt-5 " id="bungkus">
@@ -52,7 +52,9 @@
                 <p style="color:#9098A5; font-size:11px;">By signing up you agree to our<br>
                     Terms of Use and Privacy Policy</P>
                 <button id="buton" type="submit" class="btn btn-primary">CREATE ACCOUNT</button>
-                
+                <p class="text-center"style="color:#9098A5; font-size:11px;">Under 13 years old? Sign Up Here!<br>
+                Are you a teacher? Get Penzu Classroom Here!</P>
+
 
             </form>
         </div>
