@@ -93,9 +93,9 @@ h3 {
 #form {
     background-color: #FFFFFF;
     height : 379px;
-width : 540px;
-margin : 30px 405px 50px 405px;
-max-width : 540px;
+    width : 540px;
+    margin : 30px 405px 50px 405px;
+    max-width : 540px;
 }
 
 #label {
@@ -130,8 +130,8 @@ max-width : 540px;
 
 .form-control {
     height : 48px;
-width : 440px;
-border : 1px solid  #9FA4AA;
-margin : 0 0 10px 0;
-padding : 8px 10px 8px 10px;
+    width : 440px;
+    border : 1px solid  #9FA4AA;
+    margin : 0 0 10px 0;
+    padding : 8px 10px 8px 10px;
 }

@@ -10,10 +10,11 @@
 
 <body>
     <nav class="navbar navbar-light" id="Bg">
-        <a class="navbar-brand mx-auto pl-5"><img src="assets\img\penzu_white.png" id="logotgh"></a>
+        <a class="navbar-brand mx-auto pl-5"><img src="<?= base_url("assets\img\penzu_white.png") ?>" id="logotgh"></a>
         <form class="form-inline">
             <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
-            <a href="views\Register.php"> <button class="btn" type="button" id="C">Sign up</button></a>
+            <a href="<?= site_url("RegisterController") ?>"> <button class="btn" type="button" id="C">Sign
+                    up</button></a>
         </form>
     </nav>
     <div class="container-fluid mt-5 pt-5 " id="bungkus">
@@ -23,9 +24,10 @@
                     <h3> Sign In </h3>
                 </div>
             </center>
-            <form action="<?= base_url("index.php/login/doLogin") ?>" method="POST">
+            <form action="<?= site_url("LoginController/doLogin") ?>" method="POST">
                 <div id="formemail" class="form-group">
-                    <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1"
+                        aria-describedby="emailHelp">
                     <label id="label" for="exampleInputEmail1">EMAIL ADDRESS</label>
                 </div>
                 <div class="form-group">

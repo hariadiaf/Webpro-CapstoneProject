@@ -4,7 +4,7 @@ class LoginController extends CI_Controller {
     
 	public function index()
 	{
-		$this->load->view('login');
+		$this->load->view('Login');
 	}
 
     public function doLogin(){
@@ -13,9 +13,9 @@ class LoginController extends CI_Controller {
 
         $res = $this->LoginModel->getUserLogin($email,$password);
         if($res != null){
-            redirect('index');
+            echo "login berhasil";
         }else{
-            redirect('login');
+            echo "login gagal";
         }
     }
 }
