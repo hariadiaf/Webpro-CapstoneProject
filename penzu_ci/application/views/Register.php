@@ -43,11 +43,13 @@
                     <input type="password" class="form-control" id="exampleInputPassword1">
                     <label id="label3" for="exampleInputPassword1">PASSWORD</label>
                 </div>
-                <div class="form-group">
+                <div class="form-group">    
                     <input type="password" class="form-control" id="exampleInputPassword1">
                     <label id="label3" for="exampleInputPassword1">CONFIRM PASSWORD</label>
                 </div>
-                <input type="checkbox" id="cbox" name="vehicle3" value="Boat" checked> Send me awesome updates from the Penzu team!<br><br><br>
+                <input type="checkbox" id="cbox" name="vehicle3" value="Boat"  checked> <a style="color:#9098A5;">Send me awesome updates from the Penzu team!</a><br><br><br><br>
+                <p style="color:#9098A5; font-size:11px;">By signing up you agree to our<br>
+                Terms of Use and Privacy Policy</P>
                 <button id="buton" type="submit" class="btn btn-primary">CREATE ACCOUNT</button>
 
             </form>
