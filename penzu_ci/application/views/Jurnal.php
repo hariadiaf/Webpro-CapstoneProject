@@ -91,13 +91,22 @@
 
 
 
-<div class="" style="margin-left : 100px;">
-  <img src="<?= base_url('assets/img/Capture.PNG') ?>" width="680px">
+<div class="row" style=" margin-left : 100px;">
+  <div class="row d-flax" >
+      <img src="<?= base_url('assets/img/buku.PNG') ?>" width="680px">
+      <div class="card justify-item-center" style="width: 18rem; position: absolute; ">
+        <div class="card-body">
+          <p class="card-text">Upgrade to Penzu PRO for multiple journals, added security with encryption, tags, global search, customizable journals, and more!.</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+  </div>
   <div class="">
     <div class="card" style="width: 18rem;">
       <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <img src="<?= base_url('assets/img/penzu-pro_red.png') ?>" width="150px">
+        <!-- <h5 class="card-title">Special title treatment</h5> -->
+        <p class="card-text">Upgrade to Penzu PRO for multiple journals, added security with encryption, tags, global search, customizable journals, and more!.</p>
         <a href="#" class="btn btn-primary">Go somewhere</a>
       </div>
     </div>
