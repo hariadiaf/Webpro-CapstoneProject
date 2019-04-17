@@ -6,9 +6,6 @@ body {
     background-color: #f23f21;
     height: 50px;
     position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     z-index: 900;
 }
 
@@ -163,8 +160,4 @@ h1 {
 #lastname {
     position: relative;
     left: 4.5%;   
-}
-
-p {
-    color: #9098A5;
 }
