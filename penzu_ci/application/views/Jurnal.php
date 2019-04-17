@@ -39,6 +39,7 @@
 
       <!-- <button class="btn btn-outline-success my-2 my-sm-0 Rounded corners" type="submit">Search</button> -->
       <!-- <img src=".../assets/img/penzu_white.png" alt=""> -->
+      <!-- test -->
       <div class="text-center" style="margin-left : 340px; ">
         <img style="width : 100px;" src="<?= base_url('assets/img/penzu_white.png')?>" width="10px">
       </div>
@@ -67,14 +68,14 @@
   </div>
 </nav>
 <div class="" style="background-color : #2F3940; position: relative; bottom: 24px; padding : 12px;">
-    <a href="#" class="float-right" name="btnGoPro" style="background-color : #258CD1; padding : 6px 8px;
+    <a href="#" class="float-right" name="btnNewJournal" style="background-color : #258CD1; padding : 6px 8px;
     text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 180px;"> <img src="<?= base_url('assets/img/book.png');?>" width="20px"> New Journal</a>
 
-    <a href="#" class="float-right" name="btnGoPro" style="background-color : #273036; padding : 6px 8px;
-    text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;">Tags</a>
+    <a href="#" class="float-right" name="btnTag" style="background-color : #273036; padding : 6px 8px;
+    text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;"> <img src="<?= base_url('assets/img/tag.png') ?>" width="20px"> Tags</a>
 
-    <a href="#" class="float-right" name="btnGoPro" style="background-color : #273036; padding : 6px 8px;
-    text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;">  Change Themes</a>
+    <a href="#" class="float-right" name="btnChangeThemes" style="background-color : #273036; padding : 6px 8px;
+    text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;"> <img src="<?= base_url('assets/img/brush.png') ?>" width="20px"> Change Themes</a>
 
     <h6 style="margin-left : 200px; font-size: 16px; color : #FFFFFF;" >Displaying 1 Journal</h6>
 
