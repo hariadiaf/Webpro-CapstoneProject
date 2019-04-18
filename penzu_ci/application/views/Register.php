@@ -13,7 +13,7 @@
         <a class="navbar-brand mx-auto pl-5"><img src="<?= base_url("assets\img\penzu_white.png") ?>" id="logotgh"></a>
         <form class="form-inline">
             <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
-            <a href="<?= base_url("views\Login.php") ?>"> <button class="btn" type="button" id="C">Sign in</button></a>
+            <a href="<?= site_url("LoginController") ?>"> <button class="btn" type="button" id="C">Sign in</button></a>
         </form>
     </nav>
     <div class="container-fluid mt-5 pt-5 " id="bungkus">
@@ -24,27 +24,27 @@
                     <h1>Let’s create your free account</h1>
                 </div>
             </center>
-            <form>
+            <form action="<?= site_url("RegisterController/index") ?>" method="POST">
                 <div id="formemail" class="form-group form-inline">
                     <div class="form-group mb-2 m-3">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" name="first_name" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <div class="form-group mb-2 m-2" id="lastname">
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <input type="text" class="form-control" name="last_name" id="exampleInputEmail1" aria-describedby="emailHelp">
                     </div>
                     <label id="label" for="exampleInputEmail1">First Name</label>
                     <label id="label2" for="exampleInputEmail1">Last Name</label>
                 </div>
                 <div class="form-group">
-                    <input type="email" class="form-control" id="exampleInputEmail1">
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1">
                     <label id="label3" for="exampleInputEmail1">EMAIL ADDRESS</label>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" class="form-control" name="password" id="exampleInputPassword1">
                     <label id="label3" for="exampleInputPassword1">PASSWORD</label>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control" id="exampleInputPassword1">
+                    <input type="password" class="form-control" name="password_conf" id="exampleInputPassword1">
                     <label id="label3" for="exampleInputPassword1">CONFIRM PASSWORD</label>
                 </div>
                 <input type="checkbox" id="cbox" name="vehicle3" value="Boat" checked> <a style="color:#9098A5;">Send me

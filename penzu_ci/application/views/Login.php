@@ -13,8 +13,7 @@
         <a class="navbar-brand mx-auto pl-5"><img src="<?= base_url("assets\img\penzu_white.png") ?>" id="logotgh"></a>
         <form class="form-inline">
             <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
-            <a href="<?= site_url("RegisterController") ?>"> <button class="btn" type="button" id="C">Sign
-                    up</button></a>
+            <a href="<?= site_url("RegisterController") ?>"> <button class="btn" type="button" id="C">Sign up</button></a>
         </form>
     </nav>
     <div class="container-fluid mt-5 pt-5 " id="bungkus">
@@ -34,8 +33,8 @@
                     <input type="password" class="form-control" name="pass" id="exampleInputPassword1">
                     <label id="label" for="exampleInputPassword1">PASSWORD</label>
                 </div>
-                <a href="#">Forget your password?</a> <button id="buton" type="submit" class="btn btn-primary">Sign
-                    In</button>
+                <a href="#">Forget your password?</a> 
+                <button id="buton" type="submit" class="btn btn-primary">Sign In</button>
 
             </form>
         </div>
