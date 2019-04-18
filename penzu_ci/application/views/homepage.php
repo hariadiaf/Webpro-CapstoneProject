@@ -9,7 +9,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <meta charset="utf-8">
         <link rel="stylesheet" href="assets/homepage.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         <title>Write In Private: Free Online Diary And Personal Journal | Penzu</title>
     </head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -34,41 +34,40 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <body>
         <div class="container">
         <nav class="navbar border-bottom navbar-expand-sm fixed-top" style='background-color:white;'>
-        <div class="collapse navbar-collapse" id="navbarNav" style='margin-left: 14.7%;'>
-            <a class="navbar-brand" href="#" style='margin-top: -3.5px;'>
-                <img src="assets/img/pz-logo__red.png"  width="106" height="30.42" class="d-inline-block align-top" alt="">
-                <span style='padding-left: 8px; font-family : "Open Sans", helvetica, sans-serif; font-size : 14px; color :  #8E8E93; padding-bottom: 5px;'>Your Private Online Journal</span>
-            </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav navbar-right" style='font-family : "Open Sans", helvetica, sans-serif;
-            font-size : 14px;
-            font-weight : 600;
-            line-height : 14px;
-            word-spacing : 0px;
-            color :  #8E8E93 !important;'>
-            <a class="nav-item nav-link active" href="#">PENZU PRO<span class="sr-only">(current)</span></a>
-            <a class="nav-item nav-link" href="#">Login</a>
+            <div class="collapse navbar-collapse" id="navbarNav" style='margin-left: 14.7%;'>
+                <a class="navbar-brand" href="#" style='margin-top: -3.5px;'>
+                    <img src="assets/img/pz-logo__red.png"  width="106" height="30.42" class="d-inline-block align-top" alt="">
+                    <span style='padding-left: 8px; font-family : "Open Sans", helvetica, sans-serif; font-size : 14px; color :  #8E8E93; padding-bottom: 5px;'>Your Private Online Journal</span>
+                </a>
             </div>
-            <form class="form-inline">
-                <button class="btn btn-sm btncreate" type="button" style='font-family : "Open Sans", helvetica, sans-serif;
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav navbar-right" style='font-family : "Open Sans", helvetica, sans-serif;
                 font-size : 14px;
                 font-weight : 600;
                 line-height : 14px;
-                text-align : center;
-                white-space : nowrap;
-                background-color :  #3498DB;
-                color :  #FFFFFF;
-                height : 34px;
-                width : 4.5cm;
-                max-width: 7.2cm;
-                border : 1px solid  #FFFFFF;
-                padding : 8px 16px 8px 16px;'>Create Your Journal</button>
-            </form>
+                word-spacing : 0px;
+                color :  #8E8E93 !important;'>
+                <a class="nav-item nav-link active" href="#">PENZU PRO<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#">Login</a>
+                </div>
+                <form class="form-inline">
+                    <button class="btn btn-sm btncreate" type="button" style='font-family : "Open Sans", helvetica, sans-serif;
+                    font-size : 14px;
+                    font-weight : 600;
+                    line-height : 14px;
+                    text-align : center;
+                    white-space : nowrap;
+                    background-color :  #3498DB;
+                    color :  #FFFFFF;
+                    height : 34px;
+                    width : 4.5cm;
+                    max-width: 7.2cm;
+                    border : 1px solid  #FFFFFF;
+                    padding : 8px 16px 8px 16px;'>Create Your Journal</button>
+                </form>
+            </div>
+            </nav>
         </div>
-        </nav>
-        </div>
-
 
         <div class="firstlog">
             <a class="btn a-firstlog" href="/view/login" target="_self" style="font-weight : 600;">Log in</a>
@@ -89,7 +88,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <p id="tagline">Your private, 100% customizable online journal.
                         <br> Loved by over 2 million writers around the world.
                     </p>
-                    <a class="btn btn-block btn-primary" id="btnsignup" href="" style="font-weight : 600;">Start Your Free Journal Now!</a>
+                    <a class="btn btn-block " id="btnsignup" href="" style="font-weight : 600;">Start Your Free Journal Now!</a>
                 </center>
             </div>
         </div>
@@ -122,15 +121,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p>Whether you’re looking for a tool to record your daily emotions and activities in a <u>reflective<br>journal</u>, keep track of milestones in a <u>food diary</u> or <u>pregnancy journal</u>, or even record your<br>dreams in a <u>dream journal</u>, Penzu has you covered.</p>
                 <p>Penzu gives you all the tools you need to focus on the ideas you want to preserve, rather than<br>the process of writing itself.</p>
             </div>
-            <a class="btn btn-primary getstarted" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
+            <a class="btn  getstarted" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
         </center>
-
         <div class="container privacy">
             <div class="row">
                 <div class="col-">
                     <h2 style="padding-top: 20%; padding-bottom: 13px;">Privacy is our #1 Concern</h2>
                     <p>Even when carefully kept, paper journals can be read by anyone who happens upon them.<br>Penzu keeps your journals safe with double password protection and military strength<br>encryption so you can rest easy knowing that your entries are secure in the Penzu Vault.</p>
-                    <a class="btn btn-primary getstarted2" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
+                    <a class="btn  getstarted2" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
                 </div>
                 <div class="col-sm">
                     <img id="priv-1" src="assets/img/feature_locking.jpg" alt="" style="height : 377px; width : 361px; margin-left: 19.2%; margin-top: 11%;">
@@ -143,12 +141,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-" style="margin-left: -29%; margin-top: 17.5%;">
                     <h2 style="padding-bottom: 8px;">Write from Anywhere</h2>
                     <p style="margin-bottom: 8px;">Take your journals wherever you go with the Penzu mobile apps for iPhone, iPad,<br>and Android phones and tablets.</p>
-                    <a class="btn btn-primary getstarted2" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
+                    <a class="btn  getstarted2" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
                 </div>
             </div>
         </div>
         <center>
-        <div class="container" style="margin-left: 215px; margin-top: 1.55%;">
+        <!-- <div class="container" style="margin-left: 215px; margin-top: 1.55%;">
         <div class="row" style="padding-bottom: 5%;">
             <div class="col- kolomfeatures">
                 <div>
@@ -179,7 +177,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <div class='title-features'>Fully Customizable Diary</div>
                 <div class='detail-features'>Make each <span><a href="">journal</a></span> your own with<br>custom covers, backgrounds, and<br>fonts.</div>
-                <a class="feature__cta btn btn-primary" href="/pro" target="_self">Learn More</a>
             </div>
             <div class="col- kolomfeatures">
                 <div>
@@ -187,27 +184,35 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
                 <div class='title-features'>Smart Journal Search</div>
                 <div class='detail-features'>Quickly and easily search through<br>your journals, entries, and tags.</div>
-                <a class="feature__cta btn btn-primary" href="/pro" target="_self">Learn More</a>
             </div>
             <div class="col- kolomfeatures">
                 <div>
                     <img src="assets/img/feature-icon__security.png" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Military Grade Security</div>
-                <div class='detail-features'>Further protect your diary with<br>military-grade 256-bit AES encryption.</div>
-                <a class="feature__cta btn btn-primary" href="/pro" target="_self">Learn More</a>
+                <div class='detail-features'>Further protect your diary with<br>military-grade 256-bit AES<br>encryption.</div>
             </div>
         </div>
+        <div class="row" style='width : 952px; margin-left: -20%; margin-top: -6%;'>
+            <div class="col">
+                <a class="btnlearnmore btn" href="/pro" target="_self">Learn More</a>
+            </div>
+            <div class="col">
+                <a class="btnlearnmore btn" href="/pro" target="_self" style='margin-left: -7%;'>Learn More</a>
+            </div>
+            <div class="col">
+                <a class="btnlearnmore btn" href="/pro" target="_self" style='margin-left: -22%;'>Learn More</a>
+            </div>
         </div>
+        </div> -->
         </center>
         <center>
             <h2 class="resource">Diary and Journal Writing Resources</h2>
-            <div class="container" style="padding-bottom: 104px;">
+            <div class="container" style="padding-bottom: 104px; margin-top: 33px; width : 913px;">
                 <div class="row">
                     <div class="col">
-                        <div style='font-family : "Open Sans", helvetica, sans-serif; font-size : 16px; font-weight : 700; line-height : 17.6px; text-align : center;'
-                            >Journaling basics</div>
-                        <div>
+                        <div class='judulresources'>Journaling basics</div>
+                        <div class='detailresources'>
                             <a href="#">What is a Journal?</a><br>
                             <a href="#">What is a Journal Entry?</a><br>
                             <a href="#">Benefits of Journaling</a><br>
@@ -218,9 +223,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                     <div class="col">
-                        <div style='font-family : "Open Sans", helvetica, sans-serif; font-size : 16px; font-weight : 700; line-height : 17.6px; text-align : center;'
-                            >Types of Journals</div>
-                        <div>
+                        <div class='judulresources'>Types of Journals</div>
+                        <div class='detailresources'>
                             <a href="#">Bible Journal</a><br>
                             <a href="#">Dream Journal</a><br>
                             <a href="#">Prayer Journal</a><br>
@@ -232,10 +236,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                     <div class="col">
-                        <div style='font-family : "Open Sans", helvetica, sans-serif; font-size : 16px; font-weight : 700; line-height : 17.6px; text-align : center;'
-                            >Diary Basics</div>
-                        <div>
-                        <div>
+                        <div class='judulresources'>Diary Basics</div>
+                        <div class='detailresources'>
                             <a href="#">What is a Diary?</a><br>
                             <a href="#">What is a Diary Entry?</a><br>
                             <a href="#">How to Write Diary</a><br>
@@ -245,19 +247,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                             <a href="#">Digital Diaries</a><br>
                         </div>
                     </div>
-                    </DIV>
                     <div class="col">
-                        <div style='font-family : "Open Sans", helvetica, sans-serif; font-size : 16px; font-weight : 700; line-height : 17.6px; text-align : center;'
-                            >Types of Diaries</div>
-                        <div>
-                        <div>
-                                <a href="#">Academic Diary</a><br>
-                                <a href="#">Food Diary</a><br>
-                                <a href="#">Health Diary</a><br>
-                                <a href="#">School Diary</a><br>
-                                <a href="#">Secret Diary</a><br>
-                                <a href="#">Wedding Diary</a><br>
-                                <a href="#">Work Diary</a><br>
+                        <div class='judulresources'>Types of Diaries</div>
+                        <div class='detailresources'>
+                            <a href="#">Academic Diary</a><br>
+                            <a href="#">Food Diary</a><br>
+                            <a href="#">Health Diary</a><br>
+                            <a href="#">School Diary</a><br>
+                            <a href="#">Secret Diary</a><br>
+                            <a href="#">Wedding Diary</a><br>
+                            <a href="#">Work Diary</a><br>
                         </div>
                     </div>
                 </div>
@@ -265,10 +264,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </center>
         <div class="container penzu-mobile">
                 <img src="assets/img/mobile-app-icon.png" alt=""style="margin-left: 53.5%; margin-top: 15%; height: 112px; width: 112px;">
-                <div id="penzu-mobile-text">
-                <span><b>Penzu Mobile</b></span><br>Take your journal wherever you go<br>with our apps for iPhone, iPad, and<br>Android phones & tablets.
+                <div id="penzu-mobile-text" style='margin-top: -99px; font-family : "Open Sans", helvetica, sans-serif; font-size : 16px; line-height : 23.2px; color:  #4B525B;'>
+                <span style='font-family : "Open Sans", helvetica, sans-serif; font-size : 20px; font-weight : 600; color:  #4B525B;'>Penzu Mobile</span>
+                <br>Take your journal wherever you go<br>with our apps for iPhone, iPad, and<br>Android phones & tablets.
                 </div>
-                <div class="landing__mobile-btns">
+                <div class="landing_mobile">
                     <a class="mobile-btn apple" href="https://itunes.apple.com/us/app/penzu/id452674732?mt=8" target="_self">
                         <img ng-src="assets/img/btn-app-store.png" alt="Apple App Store Link to Penzu Mobile App" src="assets/img/btn-app-store.png">
                     </a>
@@ -279,20 +279,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="closing">
             <h3>Ready to start writing? Sign up now!</h3>
-            <a class="btn btn-primary getstarted" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
+            <a class="btn getstarted3" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
         </div>
         <footer>
-            <div class="container">
+            <div class="container footerdalam">
             <div class="row">
-                <div class="col">
-                    <p><b>Penzu</b></p><hr>
+                <div class="col-" style="width: 183px;">
+                    <p>Penzu</p><hr>
                     <a href="">Free Signup</a><br>
                     <a href="">Penzu PRO</a><br>
                     <a href="">Login</a><br>
                     <a href="">Support</a>
                 </div>
-                <div class="col">
-                    <p><b>Journals</b></p><hr>
+                <div class="col-" style="width: 363px; padding-left: 43px;">
+                    <p>Journals</p><hr>
                     <div class="row">
                         <div class="col">
                             <a href="">Journal Prompts</a><br>
@@ -308,8 +308,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <p><b>Diaries</b></p><hr>
+                <div class="col-" style="width: 363px; padding-left: 43px;">
+                    <p>Diaries</p><hr>
                     <div class="row">
                         <div class="col">
                             <a href="">Secret Diary</a><br>
@@ -325,7 +325,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
-            <center><p>Copyright Penzu Inc. 2019</p></center>
+            <center><p style='margin-top: 5%; font-size : 12.6px; line-height : 18.9px; font-weight: 300; color : rgb(133, 155, 172);'>
+                    Copyright Penzu Inc. 2019</p></center>
             </div>
         </footer>
     </body>
