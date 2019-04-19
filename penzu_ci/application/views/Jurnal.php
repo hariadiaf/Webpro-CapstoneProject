@@ -35,7 +35,7 @@
         <div class="input-group flex-nowrap" style="display: inherit; background-color : #B00B1B; border-radius : 20px;">
           <div class="input-group-prepend">
             <span class="input-group-text" id="addon-wrapping"
-            style="border: none; border-top-left-radius: 20px; border-bottom-left-radius: 20px; background-color : #B00B1B;"> <img src="<?= base_url('assets/img/search.png')?>" width="18px" > </span>
+            style="border: none; border-top-left-radius: 20px; border-bottom-left-radius: 20px; background-color : #B00B1B;"> <img src="<?= base_url('assets/img/search.png ')?>" width="18px" > </span>
           </div>
           <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping"
           style="border: none; border-radius : 20px; background-color : #B00B1B;">
@@ -67,9 +67,11 @@
             User
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
+            <button class="dropdown-item" type="button">Penzu Podcast</button>
+            <button class="dropdown-item" type="button">Account</button>
+            <button class="dropdown-item" type="button">Help & FAQs</button>
+            <button class="dropdown-item" type="button">Pro Support</button>
+            <button class="dropdown-item" type="button">Logout</button>
           </div>
         </div>
       </form>
@@ -94,22 +96,25 @@
 <div class="row" style="padding-left: 100px;">
   <div class="row" >
       <img src="<?= base_url('assets/img/buku.PNG') ?>" width="680px" height="580px">
-      <div class="card" style="width: 18rem; position: absolute; left: 25%; top:50%;">
+      <div class="card" style="width: 30rem; position: absolute; left: 25%; top:50%;">
         <div class="card-body">
-          <p class="card-text">Upgrade to Penzu PRO for multiple journals, added security with encryption, tags, global search, customizable journals, and more!.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h3 class="card-text text-center" style="font-family : times news roman; font-size : 40px;">hariadi's Journal</h3>
+          <a href="#" class="btn "> <img src="<?= base_url('assets/img/edit.png') ?>" width="20px"> New Entry</a>
+          <a href="#" class="btn "> <img src="<?= base_url('assets/img/list.png') ?>" width="20px"> </a>
+          <a href="#" class="btn "> <img src="<?= base_url('assets/img/settings.png') ?>" width="20px"> </a>
+          <a href="#" class="btn "> <img src="<?= base_url('assets/img/unlock.png') ?>" width="20px"> </a>
         </div>
       </div>
   </div>
   <div class="">
-    <div class="card" style="width: 18rem;">
+    <div class="card ml-5 pl-5" style="width: 30rem;">
       <div class="card-body">
-        <img src="<?= base_url('assets/img/penzu-pro_red.png') ?>" width="150px">
+        <img class="text-center" src="<?= base_url('assets/img/penzu-pro_red.png') ?>" width="200px">
         <!-- <h5 class="card-title">Special title treatment</h5> -->
-        <p class="card-text">Upgrade to Penzu PRO for multiple journals, added security with encryption, tags, global search, customizable journals, and more!.</p>
+        <p class="card-text text-center">Upgrade to Penzu PRO for multiple journals, added security with encryption, tags, global search, customizable journals, and more!.</p>
         <div class="row">
           <a  href="#" class="btn btn-primary">Upgrade Now</a>
-          <a class="float-right" href="#" class="btn btn-primary">Learn More</a>
+          <a class="float-right" href="#" class="btn ml-2" style="margin-left : 8px; font-style : bold; font-weight : bold; ">Learn More</a>
         </div>
 
       </div>
