@@ -86,16 +86,36 @@ body {
         <!-- <a class="navbar-brand" href="#">Navbar</a> -->
         <div id="mySidenav" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-          <a href="#">About</a>
-          <a href="#">Services</a>
-          <a href="#">Clients</a>
-          <a href="#">Contact</a>
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border : none; color : #FFFFFF;">
+              hariadi's journal
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button"> <img src="<?= base_url('assets/img/home.png') ?>" width="16px"> Home</button>
+              <button class="dropdown-item" type="button">hariadi's journal</button>
+            </div>
+            <div class="input-group flex-nowrap" style="display: inherit; background-color : #B00B1B; border-radius : 20px;">
+              <!-- <div class="input-group-prepend">
+                <span class="input-group-text" id="addon-wrapping"
+                style="border: none; border-top-left-radius: 20px; border-bottom-left-radius: 20px; background-color : #B00B1B;"> <img src="<?= base_url('assets/img/search.png ')?>" width="18px" > </span>
+              </div> -->
+              <input type="text" class="form-control" placeholder="Search Journal ..." aria-label="Username" aria-describedby="addon-wrapping"
+              style="border: none; border-radius : 20px; background-color : #ffffff;">
+            </div>
+
+          </div>
+          <a href="#" style="font-family : arial; font-size : 20px;"> <img src="<?= base_url('assets/img/add.png') ?>" width="20px"> New Entry</a>
+          <a href="#" style="font-family : arial; font-size : 20px;"> <img src="<?= base_url('assets/img/list2.png')  ?>" width="20px"> View All Entries</a>
+          <a href="#" style="font-family : arial; font-size : 20px;"> <img src="<?= base_url('assets/img/star.png') ?>" width="20px"> View Starred Entries</a>
+          <a href="#" style="font-family : arial; font-size : 20px;">Test</a>
+          <input type="checkbox" name="date" value="date" style="margin-left : 32px;"> Sat. 4/20/19<br>
         </div>
 
         <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
+        <a href="#" class="btn " style="margin-left : 8px;"> <img src="<?= base_url('assets/img/home.png') ?>" width="20px"> </a>
 
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
