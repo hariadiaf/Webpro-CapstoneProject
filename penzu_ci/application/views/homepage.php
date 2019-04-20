@@ -6,13 +6,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <meta charset="utf-8">
         <link rel="stylesheet" href="assets/homepage.css">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         <title>Write In Private: Free Online Diary And Personal Journal | Penzu</title>
     </head>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script>
         // jQuery untuk hide navbar
         (function ($) {
@@ -41,53 +43,74 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </a>
             </div>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav navbar-right" style='font-family : "Open Sans", helvetica, sans-serif;
-                font-size : 14px;
-                font-weight : 600;
-                line-height : 14px;
-                word-spacing : 0px;
-                color :  #8E8E93 !important;'>
-                <a class="nav-item nav-link active" href="#">PENZU PRO<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#">Login</a>
+                <div class="navbar-nav navbar-right" style=''>
+                <a class="nav-item nav-link active" href="#" style="color: #8E8E93 !important; margin-right: 21px;">Penzu PRO<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#" style="color: #8E8E93 !important; margin-right: 12px;">Log in</a>
                 </div>
                 <form class="form-inline">
-                    <button class="btn btn-sm btncreate" type="button" style='font-family : "Open Sans", helvetica, sans-serif;
-                    font-size : 14px;
-                    font-weight : 600;
-                    line-height : 14px;
-                    text-align : center;
-                    white-space : nowrap;
-                    background-color :  #3498DB;
-                    color :  #FFFFFF;
-                    height : 34px;
-                    width : 4.5cm;
-                    max-width: 7.2cm;
-                    border : 1px solid  #FFFFFF;
-                    padding : 8px 16px 8px 16px;'>Create Your Journal</button>
+                    <button class="btn btn-sm btncreate" type="button" style=''>Create Your Journal</button>
                 </form>
             </div>
             </nav>
         </div>
 
         <div class="firstlog">
-            <a class="btn a-firstlog" href="/view/login" target="_self" style="font-weight : 600;">Log in</a>
-            <a class="btn a-firstlog" href="" ng-click="$ctrl.openSignupModal()" style="font-weight : 600;">Sign up</a>
+            <a class="btn a-firstlog" style="font-weight : 600;" href="<?= site_url("LoginController") ?>">Log in</a>
+            
+            <a class="btn a-firstlog" href=""data-toggle="modal" data-target="#exampleModal" style="font-weight : 600;">Sign up</a>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <button type="button" class="close" id="closeicon" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Welcome to Penzu!<br>Let’s create your free account.</h5>
+                </div>
+                <div class="modal-body">
+                <form action="<?= site_url("RegisterController/index") ?>" method="POST">
+                <div id="formemail" class="form-group form-inline">
+                    <div class="form-group mb-2 m-3">
+                        <input type="text" class="form-control" name="first_name" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group mb-2 m-2">
+                        <input type="text" class="form-control" name="last_name" id="exampleInputEmail1" aria-describedby="emailHelp" style="margin-left: -9px;">
+                    </div>
+                    <label id="label" for="exampleInputEmail1">FIRST NAME</label>
+                    <label id="label2" for="exampleInputEmail1">LAST NAME</label>
+                </div>
+                <div id="formlain" class="form-group">
+                    <input type="email" class="form-control" name="email" id="exampleInputEmail1">
+                    <label id="label3" for="exampleInputEmail1">EMAIL ADDRESS</label>
+                </div>
+                <div id="formlain" class="form-group">
+                    <input type="password" class="form-control" name="password" id="exampleInputPassword1">
+                    <label id="label3" for="exampleInputPassword1">PASSWORD</label>
+                </div>
+                <div id="formlain" class="form-group">
+                    <input type="password" class="form-control" name="password_conf" id="exampleInputPassword1">
+                    <label id="label3" for="exampleInputPassword1">CONFIRM PASSWORD</label>
+                </div>
+                <input type="checkbox" id="cbox" name="vehicle3" value="Boat" checked> <a style='color:#9098A5; font-size : 14px; line-height : 19.6px;'>Send me
+                    awesome updates from the Penzu team!</a>
+                <p style="color:#9098A5; font-size:11px; margin: 30px 0px 0px 65px;">By signing up you agree to our<br>
+                    <u>Terms of Use</u> and <u>Privacy Policy</u>.</p>
+                <button id="buton" type="submit" class="btn btn-primary">Create Account</button>
+            </form>
+                </div>
+                </div>
+            </div>
+            </div>
+
         </div>
-        <div class="part1" style='background-image : url("assets/img/background-desk.jpg") !important;
-        background-position: 50% 98%;
-        background-repeat : no-repeat;
-        background-size: cover;
-        height : 846.594px;
-        width : 1349px;
-        display : block;
-        overflow : hidden;'>
+        <div class="part1">
             <div class="container logoplus">
                 <center>
                     <img id="logomain" src="assets/img/pz-logo__red.png" alt="">
                     <br>
                     <p id="tagline">Your private, 100% customizable online journal.
-                        <br> Loved by over 2 million writers around the world.
-                    </p>
+                        <br> Loved by over 2 million writers around the world.</p>
                     <a class="btn btn-block " id="btnsignup" href="" style="font-weight : 600;">Start Your Free Journal Now!</a>
                 </center>
             </div>
@@ -145,67 +168,65 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 </div>
             </div>
         </div>
-        <center>
-        <!-- <div class="container" style="margin-left: 215px; margin-top: 1.55%;">
-        <div class="row" style="padding-bottom: 5%;">
+        <div class="container kontainerlogo" style=''>
+        <div class="row" style="width: 952px; height: 208px; margin: auto; margin-left: 98px;">
             <div class="col- kolomfeatures">
-                <div>
+                <div class="imagefeatures">
                     <img src="assets/img/feature-icon__security2.png" alt="" style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>100% Private</div>
                 <div class='detail-features'>Designed to focus on privacy, your<br>entries are totally private by default!</div>
             </div>
             <div class="col- kolomfeatures">
-                <div>
+                <div class="imagefeatures">
                     <img src="assets/img/feature-icon__mobile.png" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Available Everywhere</div>
                 <div class='detail-features'>Enjoy Penzu on the move. Available<br>for iOS and Android and totally free!</div>
             </div>
             <div class="col- kolomfeatures">
-                <div>
+                <div class="imagefeatures">
                     <img src="assets/img/feature-icon__reminder.png" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Never Forget to Write</div>
                 <div class='detail-features'>Custom email reminders help you<br>make sure you never forget to<br>write.</div>
             </div>
         </div>
-        <div class="row" style="padding-bottom: 5%;">
+        <div class="row" style="width: 952px; height: 208px; margin: auto;  margin-left: 98px; margin-top: 25px;">
             <div class="col- kolomfeatures">
-                <div>
+                <div class="imagefeatures">
                     <img src="assets/img/feature-icon__customize.png" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Fully Customizable Diary</div>
                 <div class='detail-features'>Make each <span><a href="">journal</a></span> your own with<br>custom covers, backgrounds, and<br>fonts.</div>
             </div>
             <div class="col- kolomfeatures">
-                <div>
+                <div class="imagefeatures">
                     <img src="assets/img/feature-icon__search.png" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Smart Journal Search</div>
                 <div class='detail-features'>Quickly and easily search through<br>your journals, entries, and tags.</div>
             </div>
             <div class="col- kolomfeatures">
-                <div>
+                <div class="imagefeatures">
                     <img src="assets/img/feature-icon__security.png" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Military Grade Security</div>
                 <div class='detail-features'>Further protect your diary with<br>military-grade 256-bit AES<br>encryption.</div>
             </div>
         </div>
-        <div class="row" style='width : 952px; margin-left: -20%; margin-top: -6%;'>
-            <div class="col">
+        <div class="row" style="width: 952px; height: 208px; margin-left: 185px; margin-top: -10px;">
+            <div class="col kolomlearn">
                 <a class="btnlearnmore btn" href="/pro" target="_self">Learn More</a>
             </div>
             <div class="col">
-                <a class="btnlearnmore btn" href="/pro" target="_self" style='margin-left: -7%;'>Learn More</a>
+                <a class="btnlearnmore btn" href="/pro" target="_self" style="margin-left: -17px;">Learn More</a>
             </div>
             <div class="col">
-                <a class="btnlearnmore btn" href="/pro" target="_self" style='margin-left: -22%;'>Learn More</a>
+                <a class="btnlearnmore btn" href="/pro" target="_self" style="margin-left: -37px;">Learn More</a>
             </div>
         </div>
-        </div> -->
-        </center>
+        </div>
         <center>
             <h2 class="resource">Diary and Journal Writing Resources</h2>
             <div class="container" style="padding-bottom: 104px; margin-top: 33px; width : 913px;">
@@ -279,7 +300,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="closing">
             <h3>Ready to start writing? Sign up now!</h3>
-            <a class="btn getstarted3" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
+            <a class="btn getstarted3" href="">Get Started</a>
         </div>
         <footer>
             <div class="container footerdalam">
