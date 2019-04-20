@@ -17,106 +17,111 @@
 
 <body>
   <style media="screen">
-    body {
-      background-image: url("assets/img/wood.jpg");
-    }
+  body {
+    background-image: url("assets/img/wood.jpg");
+  }
   </style>
 
-<div class="sticky-top">
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color : #EF4228; border-radius : 0px;">
-    <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+  <div class="sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color : #EF4228; border-radius : 0px;">
+      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
-      <form class="form-inline ">
-        <div class="input-group flex-nowrap" style="display: inherit; background-color : #B00B1B; border-radius : 20px;">
-          <div class="input-group-prepend">
-            <span class="input-group-text" id="addon-wrapping"
-            style="border: none; border-top-left-radius: 20px; border-bottom-left-radius: 20px; background-color : #B00B1B;"> <img src="<?= base_url('assets/img/search.png')?>" width="18px" > </span>
+        <form class="form-inline ">
+          <div class="input-group flex-nowrap" style="display: inherit; background-color : #B00B1B; border-radius : 20px;">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="addon-wrapping"
+              style="border: none; border-top-left-radius: 20px; border-bottom-left-radius: 20px; background-color : #B00B1B;"> <img src="<?= base_url('assets/img/search.png ')?>" width="18px" > </span>
+            </div>
+            <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping"
+            style="border: none; border-radius : 20px; background-color : #B00B1B;">
           </div>
-          <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping"
-          style="border: none; border-radius : 20px; background-color : #B00B1B;">
-        </div>
-        <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search"
-        style="border: none;border-radius : 20px; background-color : #B00B1B;
-        background : url(../assets/img/search.png) no-repeat scroll 7px 7px;
-        padding-left : 30px"> -->
+          <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search"
+          style="border: none;border-radius : 20px; background-color : #B00B1B;
+          background : url(../assets/img/search.png) no-repeat scroll 7px 7px;
+          padding-left : 30px"> -->
 
-        <!-- <button class="btn btn-outline-success my-2 my-sm-0 Rounded corners" type="submit">Search</button> -->
-        <!-- <img src=".../assets/img/penzu_white.png" alt=""> -->
-        <!-- test -->
-        <div class="text-center" style="margin-left : 340px; ">
-          <img style="width : 100px;" src="<?= base_url('assets/img/penzu_white.png')?>" width="10px">
-        </div>
-        <div class="float-right" style="margin-left : 340px;">
-          <a href="#" name="btnGoPro" style="background-color : #ffffff; padding : 6px 8px; text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #E74C3C;">Go PRO</a>
-        </div>
-
-        <style>
-        .vl {
-          border-left: 6px solid black;
-          height: 500px;
-        }
-        </style>
-
-        <div class="dropdown">
-          <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border : none; color : #FFFFFF;">
-            User
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button">Action</button>
-            <button class="dropdown-item" type="button">Another action</button>
-            <button class="dropdown-item" type="button">Something else here</button>
+          <!-- <button class="btn btn-outline-success my-2 my-sm-0 Rounded corners" type="submit">Search</button> -->
+          <!-- <img src=".../assets/img/penzu_white.png" alt=""> -->
+          <!-- test -->
+          <div class="text-center" style="margin-left : 340px; ">
+            <img style="width : 100px;" src="<?= base_url('assets/img/penzu_white.png')?>" width="10px">
           </div>
-        </div>
-      </form>
+          <div class="float-right" style="margin-left : 340px;">
+            <a href="#" name="btnGoPro" style="background-color : #ffffff; padding : 6px 8px; text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #E74C3C;">Go PRO</a>
+          </div>
+
+          <style>
+          .vl {
+            border-left: 6px solid black;
+            height: 500px;
+          }
+          </style>
+
+          <div class="dropdown">
+            <button class="btn  dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="border : none; color : #FFFFFF;">
+              User
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+              <button class="dropdown-item" type="button">Penzu Podcast</button>
+              <button class="dropdown-item" type="button">Account</button>
+              <button class="dropdown-item" type="button">Help & FAQs</button>
+              <button class="dropdown-item" type="button">Pro Support</button>
+              <button class="dropdown-item" type="button">Logout  </button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </nav>
+    <div class="" style="background-color : #2F3940; position: relative; bottom: 24px; padding : 12px;">
+      <a href="#" class="float-right" name="btnNewJournal" style="background-color : #258CD1; padding : 6px 8px;
+      text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 180px;"> <img src="<?= base_url('assets/img/book.png');?>" width="20px"> New Journal</a>
+
+      <a href="#" class="float-right" name="btnTag" style="background-color : #273036; padding : 6px 8px;
+      text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;"> <img src="<?= base_url('assets/img/tag.png') ?>" width="20px"> Tags</a>
+
+      <a href="#" class="float-right" name="btnChangeThemes" style="background-color : #273036; padding : 6px 8px;
+      text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;"> <img src="<?= base_url('assets/img/brush.png') ?>" width="20px"> Change Themes</a>
+
+      <h6 style="margin-left : 200px; font-size: 16px; color : #FFFFFF;" >Displaying 1 Journal</h6>
     </div>
-  </nav>
-  <div class="" style="background-color : #2F3940; position: relative; bottom: 24px; padding : 12px;">
-    <a href="#" class="float-right" name="btnNewJournal" style="background-color : #258CD1; padding : 6px 8px;
-    text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 180px;"> <img src="<?= base_url('assets/img/book.png');?>" width="20px"> New Journal</a>
-
-    <a href="#" class="float-right" name="btnTag" style="background-color : #273036; padding : 6px 8px;
-    text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;"> <img src="<?= base_url('assets/img/tag.png') ?>" width="20px"> Tags</a>
-
-    <a href="#" class="float-right" name="btnChangeThemes" style="background-color : #273036; padding : 6px 8px;
-    text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;"> <img src="<?= base_url('assets/img/brush.png') ?>" width="20px"> Change Themes</a>
-
-    <h6 style="margin-left : 200px; font-size: 16px; color : #FFFFFF;" >Displaying 1 Journal</h6>
   </div>
-</div>
 
 
 
-<div class="row" style="padding-left: 100px;">
-  <div class="row" >
+  <div class="row" style="padding-left: 100px;">
+    <div class="row" >
       <img src="<?= base_url('assets/img/buku.PNG') ?>" width="680px" height="580px">
-      <div class="card" style="width: 18rem; position: absolute; left: 25%; top:50%;">
+      <div class="card" style="width: 30rem; position: absolute; left: 25%; top:50%;">
         <div class="card-body">
-          <p class="card-text">Upgrade to Penzu PRO for multiple journals, added security with encryption, tags, global search, customizable journals, and more!.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+          <h3 class="card-text text-center" style="font-family : times news roman; font-size : 40px;">hariadi's Journal</h3>
+          <a href="#" class="btn "> <img src="<?= base_url('assets/img/edit.png') ?>" width="20px"> New Entry</a>
+          <a href="#" class="btn "> <img src="<?= base_url('assets/img/list.png') ?>" width="20px"> </a>
+          <a href="#" class="btn "> <img src="<?= base_url('assets/img/settings.png') ?>" width="20px"> </a>
+          <a href="#" class="btn "> <img src="<?= base_url('assets/img/unlock.png') ?>" width="20px"> </a>
         </div>
-      </div>
-  </div>
-  <div class="">
-    <div class="card" style="width: 18rem;">
-      <div class="card-body">
-        <img src="<?= base_url('assets/img/penzu-pro_red.png') ?>" width="150px">
-        <!-- <h5 class="card-title">Special title treatment</h5> -->
-        <p class="card-text">Upgrade to Penzu PRO for multiple journals, added security with encryption, tags, global search, customizable journals, and more!.</p>
-        <div class="row">
-          <a  href="#" class="btn btn-primary">Upgrade Now</a>
-          <a class="float-right" href="#" class="btn btn-primary">Learn More</a>
-        </div>
-
       </div>
     </div>
+    <div class="">
+      <div class="card ml-5 pl-5" style="width: 30rem;">
+        <div class="card-body">
+          <img class="text-center" src="<?= base_url('assets/img/penzu-pro_red.png') ?>" width="200px">
+          <!-- <h5 class="card-title">Special title treatment</h5> -->
+          <p class="card-text text-center">Upgrade to Penzu PRO for multiple journals, added security with encryption, tags, global search, customizable journals, and more!.</p>
+          <div class="row">
+            <a  href="#" class="btn btn-primary">Upgrade Now</a>
+            <a class="float-right" href="#" class="btn ml-2" style="margin-left : 8px; font-style : bold; font-weight : bold; ">Learn More</a>
+          </div>
 
+        </div>
+      </div>
+
+    </div>
   </div>
-</div>
 
 </body>
 </html>
