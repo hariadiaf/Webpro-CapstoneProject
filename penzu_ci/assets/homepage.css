@@ -138,13 +138,11 @@
     font-size : 14px;
     font-weight : 500;
     line-height : 14px;
-    text-decoration : none solid rgb(255, 255, 255);
     text-align : center;
     vertical-align : middle;
     white-space : nowrap;
     word-spacing : 0px;
     background-color : #2386C8;
-    background-position : 0% 0%;
     color : #FFFFFF;
     height : 42px;
     width : 139.031px;
@@ -316,7 +314,7 @@ footer{
     font-size : 32px;
     line-height : 35.2px;
     color : #4B525B;
-    margin-top: 105px;
+    margin-top: -60px;
 }
 .judulresources{
     color: #4B525B;
