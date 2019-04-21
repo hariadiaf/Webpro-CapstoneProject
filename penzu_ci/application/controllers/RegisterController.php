@@ -25,14 +25,14 @@ class RegisterController extends CI_Controller {
 			$this->load->view('Register');
 		}else{
 
-			$data['first_name']   =    $this->input->post('first_name');
-			$data['last_name'] =    $this->input->post('last_name');
-			$data['email']  =    $this->input->post('email');
-			$data['password'] = $this->input->post('password');
+			$data['first_name'] = $this->input->post('first_name');
+			$data['last_name'] 	= $this->input->post('last_name');
+			$data['email']  		= $this->input->post('email');
+			$data['password'] 	= $this->input->post('password');
 
 			$this->RegisterModel->daftar($data);
 			
-			$pesan['message'] =    "Pendaftaran berhasil";
+			$pesan['message'] = "Pendaftaran berhasil";
 			
 			$this->load->view('Register',$pesan);
 	}
