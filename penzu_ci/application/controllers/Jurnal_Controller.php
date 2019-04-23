@@ -22,7 +22,7 @@ class Jurnal_Controller extends CI_Controller {
 	{
 
 
-			$this->load->view('ViewAllEntries');
+			$this->load->view('Register');
 
 	}
 }
