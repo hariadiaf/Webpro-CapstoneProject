@@ -1,10 +1,10 @@
 <?php
 
-class JurnalController extends CI_Controller {
+class SupportController extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->index('Support');
+		$this->load->view('Support');
 	}
 
 }

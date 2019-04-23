@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url("assets/set2.css") ?>">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="icon" type="image/png" href="<?= base_url("assets/img/favicon.ico")?>">
 </head>
 
 <body>
@@ -34,7 +36,7 @@
 <body>
     <div class="link">
         <a style="color:#9098A5;"><< All Journals</a><br><br>
-        <a href="<?= site_url("AccountController/edit/").$this->session->userdata('id') ?>">Account Setting</a><br>
+        <a href="<?= site_url("AccountController/edit/").$this->session->userdata('id') ?>">Account Settings</a><br>
         <a>Plans & Billing</a><br>
         <a href="<?= site_url("AccountController3") ?>">Delete Account</a>
     </div>

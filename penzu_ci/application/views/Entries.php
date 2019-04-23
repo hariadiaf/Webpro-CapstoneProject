@@ -91,7 +91,7 @@
             hariadi's journal
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button href="<?= site_url('Jurnal_Controller') ?>" class="dropdown-item" type="button"> <img src="<?= base_url('assets/img/home.png') ?>" width="16px"> Home</button>
+            <button href="<?= site_url('JurnalController') ?>" class="dropdown-item" type="button"> <img src="<?= base_url('assets/img/home.png') ?>" width="16px"> Home</button>
             <button class="dropdown-item" type="button">hariadi's journal</button>
           </div>
           <div class="input-group flex-nowrap" style="display: inherit; background-color : #B00B1B; border-radius : 20px;">

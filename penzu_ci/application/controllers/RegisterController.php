@@ -1,11 +1,7 @@
 <?php
 
 class RegisterController extends CI_Controller {
-//	public function index()
-//		{
-//		$this->load->view('Register');
-//    }
-
+	
 	function __construct(){
 		parent::__construct();
 		$this->load->library(array('form_validation'));
@@ -34,7 +30,7 @@ class RegisterController extends CI_Controller {
 			
 			$pesan['message'] = "Pendaftaran berhasil";
 			
-			$this->load->view('Jurnal',$pesan);
+			$this->load->view('Login',$pesan);
 	}
 }
 }

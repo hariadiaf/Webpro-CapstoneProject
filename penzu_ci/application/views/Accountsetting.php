@@ -2,13 +2,33 @@
 <html>
 
 <head>
-    <title>Accountsetting</title>
+    <title>Account setting</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url("assets/setting.css") ?>">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">    
+    <link rel="icon" type="image/png" href="<?= base_url("assets/img/favicon.ico")?>">
 </head>
-
+<script>
+//loader
+$(document).ready(function() {
+    setTimeout(function() {
+        $(".preloader").fadeOut("slow");
+    }, 700);
+});
+</script>
 <body>
+    <div class="preloader">
+        <div class="loading">
+            <img src="<?= base_url("assets/img/logo_default-free.png")?>" width='149' height='44'
+                style="margin-top: -100px;">
+            <div class="spinner" style="margin-top: -5%; background-color: #E72D0E; padding: 4px 4px 4px 4px; ">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-light" id="Bg">
         <a class="navbar-brand mx-auto pl-5"><img src="<?= base_url("assets\img\penzu_white.png") ?>" id="logotgh"></a>
         <?php foreach($akuns as $row){?>
@@ -43,7 +63,7 @@
         <hr style="width: 42%; margin: 2% 0 0 35%">
         <div class="form-group">
             <div>
-                <h2>Account Setting</h2>
+                <h2>Account Settings</h2>
                 <label>Time Zone</label><br>
                 <select id="time" name="time">
                     <option value="islan">UTC+12:45 — Chatham Islands</option>
@@ -87,7 +107,7 @@
     <div style="position : absolute; bottom: 68%; left: 20%;">
         <a style="color:#9098A5;">
             << All Journals</a> <br><br>
-                <a href="">Account Setting</a><br>
+                <a href="">Account Settings</a><br>
                 <a href="<?= site_url("AccountController2")?>">Plans & Billing</a><br>
                 <a href="<?= site_url("AccountController3") ?>">Delete Account</a>
     </div>
