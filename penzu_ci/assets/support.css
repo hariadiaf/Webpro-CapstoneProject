@@ -1,0 +1,53 @@
+.navbar{
+    background-color :  #F23F21;
+    height: 54px;
+}
+.support{
+    height: 84px;
+    font-family : "Open Sans", Arial, Helvetica, sans-serif;
+    font-size : 13px;
+    color :  #4B525B;
+    margin : 0 0 30px 70px;
+    padding : 20px 0 20px 0;
+}
+p.support{
+    font-size : 32px;
+    font-weight : 700;
+}
+header{
+    background-color :  #E5E5E5;
+    border-bottom : 1px solid  #ACACAC;
+    height: 84px;    
+}
+.search{
+    font-family : "Open Sans", Arial, Helvetica, sans-serif;
+    font-size : 13px;
+    background-color :  #E5E5E5;
+    color :  #4B525B;
+    height : 53px;
+    width : 951px;
+    border-top : 1px solid  #CCCCCC;
+    border-right : 1px solid  #CCCCCC;
+    border-bottom : 1px solid  #ACACAC;
+    border-left : 1px solid  #CCCCCC;
+    margin : 32px 0 20px 200px;
+    padding : 6px 6px 6px 6px;
+    display : block;
+    border-top-left-radius : 6px;
+    border-top-right-radius : 6px;
+    border-bottom-left-radius : 6px;
+    border-bottom-right-radius : 6px;
+}
+
+button.btnsearch{
+    margin: -60px 0 0 813px;
+    font-family : Arial;
+    font-size : 13px;
+    font-weight : 700;
+    text-align : center;
+    background-color :  #3498DB;
+    color :  #FFFFFF;
+    height : 38px;
+    width : 123px;
+    
+}

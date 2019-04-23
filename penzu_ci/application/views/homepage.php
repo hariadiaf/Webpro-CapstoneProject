@@ -45,10 +45,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav navbar-right" style=''>
                 <a class="nav-item nav-link active" href="#" style="color: #8E8E93 !important; margin-right: 21px;">Penzu PRO<span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="#" style="color: #8E8E93 !important; margin-right: 12px;">Log in</a>
+                <a class="nav-item nav-link" href="<?= site_url("LoginController") ?>" style="color: #8E8E93 !important; margin-right: 12px;">Log in</a>
                 </div>
                 <form class="form-inline">
-                    <button class="btn btn-sm btncreate" type="button" style=''>Create Your Journal</button>
+                    <button class="btn btn-sm btncreate" type="button" data-toggle="modal" data-target="#exampleModal" style=''>Create Your Journal</button>
                 </form>
             </div>
             </nav>
@@ -57,7 +57,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="firstlog">
             <a class="btn a-firstlog" style="font-weight : 600;" href="<?= site_url("LoginController") ?>">Log in</a>
             
-            <a class="btn a-firstlog" href=""data-toggle="modal" data-target="#exampleModal" style="font-weight : 600;">Sign up</a>
+            <a class="btn a-firstlog" data-toggle="modal" data-target="#exampleModal" style="font-weight : 600;">Sign up</a>
             <!-- Modal -->
             <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
@@ -111,7 +111,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <br>
                     <p id="tagline">Your private, 100% customizable online journal.
                         <br> Loved by over 2 million writers around the world.</p>
-                    <a class="btn btn-block " id="btnsignup" href="" style="font-weight : 600;">Start Your Free Journal Now!</a>
+                    <a class="btn btn-block " id="btnsignup" data-toggle="modal" data-target="#exampleModal" style="font-weight : 600;">Start Your Free Journal Now!</a>
                 </center>
             </div>
         </div>
@@ -144,14 +144,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <p>Whether you’re looking for a tool to record your daily emotions and activities in a <u>reflective<br>journal</u>, keep track of milestones in a <u>food diary</u> or <u>pregnancy journal</u>, or even record your<br>dreams in a <u>dream journal</u>, Penzu has you covered.</p>
                 <p>Penzu gives you all the tools you need to focus on the ideas you want to preserve, rather than<br>the process of writing itself.</p>
             </div>
-            <a class="btn  getstarted" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
+            <a class="btn  getstarted" href="" data-toggle="modal" data-target="#exampleModal">Get Started</a>
         </center>
         <div class="container privacy">
             <div class="row">
                 <div class="col-">
                     <h2 style="padding-top: 20%; padding-bottom: 13px;">Privacy is our #1 Concern</h2>
                     <p>Even when carefully kept, paper journals can be read by anyone who happens upon them.<br>Penzu keeps your journals safe with double password protection and military strength<br>encryption so you can rest easy knowing that your entries are secure in the Penzu Vault.</p>
-                    <a class="btn  getstarted2" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
+                    <a class="btn  getstarted2" href="" data-toggle="modal" data-target="#exampleModal">Get Started</a>
                 </div>
                 <div class="col-sm">
                     <img id="priv-1" src="assets/img/feature_locking.jpg" alt="" style="height : 377px; width : 361px; margin-left: 19.2%; margin-top: 11%;">
@@ -164,7 +164,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-" style="margin-left: -29%; margin-top: 17.5%;">
                     <h2 style="padding-bottom: 8px;">Write from Anywhere</h2>
                     <p style="margin-bottom: 8px;">Take your journals wherever you go with the Penzu mobile apps for iPhone, iPad,<br>and Android phones and tablets.</p>
-                    <a class="btn  getstarted2" href="" ng-click="$ctrl.openSignupModal()">Get Started</a>
+                    <a class="btn  getstarted2" href="" data-toggle="modal" data-target="#exampleModal">Get Started</a>
                 </div>
             </div>
         </div>
@@ -300,16 +300,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
         <div class="closing">
             <h3>Ready to start writing? Sign up now!</h3>
-            <a class="btn getstarted3" href="">Get Started</a>
+            <a class="btn getstarted3" href="" data-toggle="modal" data-target="#exampleModal">Get Started</a>
         </div>
         <footer>
             <div class="container footerdalam">
             <div class="row">
                 <div class="col-" style="width: 183px;">
                     <p>Penzu</p><hr>
-                    <a href="">Free Signup</a><br>
+                    <a href="<?= site_url("RegisterController") ?>">Free Signup</a><br>
                     <a href="">Penzu PRO</a><br>
-                    <a href="">Login</a><br>
+                    <a href="<?= site_url("LoginController") ?>">Log in</a><br>
                     <a href="">Support</a>
                 </div>
                 <div class="col-" style="width: 363px; padding-left: 43px;">
