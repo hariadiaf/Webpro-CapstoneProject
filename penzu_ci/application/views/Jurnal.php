@@ -18,7 +18,7 @@
 <body>
   <style media="screen">
   body {
-    background-image: url("assets/img/wood.jpg");
+    background-image: url("../assets/img/wood.jpg");
   }
   </style>
 
@@ -99,8 +99,8 @@
       <div class="card" style="width: 30rem; position: absolute; left: 25%; top:50%;">
         <div class="card-body">
           <h3 class="card-text text-center" style="font-family : times news roman; font-size : 40px;">hariadi's Journal</h3>
-          <a href="#" class="btn "> <img src="<?= base_url('assets/img/edit.png') ?>" width="20px"> New Entry</a>
-          <a href="#" class="btn "> <img src="<?= base_url('assets/img/list.png') ?>" width="20px"> </a>
+          <a href="<?= site_url('Entries_Controller')  ?>" class="btn "> <img src="<?= base_url('assets/img/edit.png') ?>" width="20px"> New Entry</a>
+          <a href="<?= site_url('ViewAllEntries_Controller') ?>" class="btn "> <img src="<?= base_url('assets/img/list.png') ?>" width="20px"> </a>
           <a href="#" class="btn "> <img src="<?= base_url('assets/img/settings.png') ?>" width="20px"> </a>
           <a href="#" class="btn "> <img src="<?= base_url('assets/img/unlock.png') ?>" width="20px"> </a>
         </div>

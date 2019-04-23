@@ -1,7 +1,7 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
 
-class Jurnal_Controller extends CI_Controller {
+
+class ViewAllEntries_Controller extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -18,8 +18,15 @@ class Jurnal_Controller extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+   function __construct(){
+ 		parent::__construct();
+ 		$this->load->library(array('form_validation'));
+ 		$this->load->helper(array('url','form'));
+ 		$this->load->model('EntriesModel'); //call model
+ }
 	public function index()
 	{
-		$this->load->view('Jurnal');
+    $data['entries'] = $this->EntriesModel->getDataJurnal();
+		$this->load->view('ViewAllEntries',$data);
 	}
 }

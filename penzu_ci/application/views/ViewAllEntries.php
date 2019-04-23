@@ -26,12 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
           <form class="form-inline ">
-            <a href="#"><img src="<?= base_url('assets/img/home.png') ?>" width="20px"> </a>
+            <a href="<?=  site_url('Jurnal_Controller') ?>"><img src="<?= base_url('assets/img/home.png') ?>" width="20px"> </a>
             <div class="input-group flex-nowrap ml-3" style="display: inherit; background-color : #B00B1B; border-radius : 20px;">
               <div class="input-group-prepend">
                 <span class="input-group-text" id="addon-wrapping"
                 style="border: none; border-top-left-radius: 20px; border-bottom-left-radius: 20px; background-color : #B00B1B;" > <img src="<?= base_url('assets/img/search.png ')?>" width="18px" > </span>
               </div>
+              <!-- TESTT -->
               <input type="text" class="form-control" placeholder="Search" aria-label="Username" aria-describedby="addon-wrapping"
               style="border: none; border-radius : 20px; background-color : #B00B1B;">
             </div>
@@ -125,6 +126,10 @@
             </form>
           </div>
         </div>
+
+        <?php foreach($entries as $row){?>
+          <?= $row->title?>
+        <?php } ?>
 
       </div>
     </div>

@@ -17,8 +17,8 @@ function __construct(){
 	}
   public function tambahEntries(){
     $valid = $this->form_validation;
-    $valid->set_rules("title","title","required");
-    $valid->set_rules("deskripsi","deskripsi","required");
+    $valid->set_rules("title","title");
+    $valid->set_rules("deskripsi","deskripsi");
 
     if($this->form_validation->run() == false){
       redirect("Entries_Controller");
@@ -50,6 +50,7 @@ public function ubahEntries($id){
 
 public function getDataJurnalWhere($id){
     $data['ent'] = $this->EntriesModel->getDataJurnalWheres($id);
+    $data['entri'] = $this->EntriesModel->getDataJurnal();
     $this->load->view('entries',$data);
 }
 
