@@ -2,6 +2,7 @@ body {
     overflow: scroll;
 }
 
+
 #Bg {
     background-color: #f23f21;
     height: 50px;
@@ -10,6 +11,10 @@ body {
     left: 0;
     right: 0;
     z-index: 900;
+}
+
+.link {
+    margin: -750px 0 0 200px;
 }
 
 #logotgh{
