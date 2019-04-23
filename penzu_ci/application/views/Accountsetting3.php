@@ -28,7 +28,7 @@
                 <p>We will permanently delete your Penzu account and all associated journals and entries.<br>
                  Please be sure that you want to delete everything on your account before<br>
                 proceeding.We will not be able to recover your journals or entries after you delete your account!</p><br>
-                <button id="buton" type="submit" class="btn btn-primary">Delete Account</button>
+                <a id="buton" href="<?= base_url('index.php/Accountcontroller3/hapus/'.$this->session->userdata('id'))?>" class="btn btn-primary">Delete Account</a>
             </div>
         </div>
 </body>
