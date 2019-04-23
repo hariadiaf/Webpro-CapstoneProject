@@ -15,7 +15,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<body>
+    <script>
+    $(document).ready(function(){
+			$(".preloader").fadeOut();
+		})
+    </script>
+        <link rel="icon" type="image/png" href="https://penzu.desk.com/customer/portal/theme_attachments/29628?cb=1436978161970">
+    <body>
+
+    <div class="global-loader">
+              <span class="loader-wrap">
+                <span class="loader-main spinner">
+                  <span class="bounce1"></span>
+                  <span class="bounce2"></span>
+                  <span class="bounce3"></span>
+                </span>
+              </span>
+            </div>
+
+
+
+    <div class="preloader">
+                <div class="loading">
+                    <img src="http://www.nauvalazhar.net/wp-content/uploads/2016/03/poi.gif" width="80">
+                    <p>Harap Tunggu</p>
+                </div>
+            </div>
     <nav class="navbar">
     <a class="navbar-brand" href="#">
         <img src="assets/img/logo_default-free.png" width="100" height="29" alt="" style="margin : -5px 0 0 184px; display: inline-block;">
@@ -32,5 +57,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     </form>
+    <div class="container bodysupport">
+        <h3 style="font-size : 22px; font-weight : 700;">Browse by Topic</h3>
+    </div>
 </body>
 </html>
