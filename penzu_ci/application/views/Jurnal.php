@@ -90,7 +90,7 @@
       <h6 style="margin-left : 200px; font-size: 16px; color : #FFFFFF;" >Displaying 1 Journal</h6>
     </div>
   </div>
-<!-- gfggfgfg -->
+<!-- endOfNavbar -->
 
 
   <div class="row" style="padding-left: 100px;">
