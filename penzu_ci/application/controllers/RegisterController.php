@@ -34,7 +34,7 @@ class RegisterController extends CI_Controller {
 			
 			$pesan['message'] = "Pendaftaran berhasil";
 			
-			$this->load->view('Register',$pesan);
+			$this->load->view('Jurnal',$pesan);
 	}
 }
 }

@@ -17,30 +17,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script>
     $(document).ready(function(){
-			$(".preloader").fadeOut();
+        setTimeout(function(){ $(".preloader").fadeOut("slow"); }, 700);
 		})
     </script>
-        <link rel="icon" type="image/png" href="https://penzu.desk.com/customer/portal/theme_attachments/29628?cb=1436978161970">
+        <link rel="icon" type="image/png" href="<?= base_url("assets/img/favicon.ico")?>">
     <body>
 
-    <div class="global-loader">
-              <span class="loader-wrap">
-                <span class="loader-main spinner">
-                  <span class="bounce1"></span>
-                  <span class="bounce2"></span>
-                  <span class="bounce3"></span>
-                </span>
-              </span>
-            </div>
-
-
-
-    <div class="preloader">
+    <!-- <div class="preloader">
                 <div class="loading">
-                    <img src="http://www.nauvalazhar.net/wp-content/uploads/2016/03/poi.gif" width="80">
-                    <p>Harap Tunggu</p>
+                    <img src="<?= base_url("assets/img/logo_default-free.png")?>" width='149' height='44' style="margin-top: -100px;">
+                <div class="spinner" style="margin-top: -5%; background-color: #E72D0E; padding: 4px 4px 4px 4px; ">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
                 </div>
-            </div>
+                </div>
+            </div> -->
     <nav class="navbar">
     <a class="navbar-brand" href="#">
         <img src="assets/img/logo_default-free.png" width="100" height="29" alt="" style="margin : -5px 0 0 184px; display: inline-block;">
@@ -57,8 +49,104 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         </div>
     </div>
     </form>
-    <div class="container bodysupport">
-        <h3 style="font-size : 22px; font-weight : 700;">Browse by Topic</h3>
+    <div class="row" style="margin-left: 0.2px;">
+    <div class="container bodysupport col-">
+        <h3 style="font-size : 22px; font-weight : 700; margin: 2px 0 0 -1px; padding-bottom: 6px;">Browse by Topic</h3><hr>
+        <div class="row">
+            <div class="col-6">
+                <p class="topicTitle">Plans & Billing</p>
+                <h6 class="articles" style="">11 Articles<a href="http://support.penzu.com/customer/en/portal/topics/898452-plans-billing-/articles" style="">View All</a></h6>
+                <ul>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2546871-my-pro-account-was-renewed-and-i-didn-t-want-it-to-be">My Pro account was renewed and I didn&#x...</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525804-how-to-delete-your-account">How to delete your account</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525787-how-to-downgrade-your-account">How to downgrade your account</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525789-how-to-change-your-payment-method">How to change your payment method</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525790-how-to-turn-on-off-auto-renew">How to turn on / off auto-renew</a></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <p class="topicTitle">Account Settings</p>
+                <h6 class="articles" style="">8 Articles<a href="http://support.penzu.com/customer/en/portal/topics/898452-plans-billing-/articles" style="">View All</a></h6>
+                <ul>
+                    <li><a href="">How to turn on / off the podcast player</a></li>
+                    <li><a href="">How to change your name, email address, ...</a></li>
+                    <li><a href="">How to change your time zone</a></li>
+                    <li><a href="">How to change your default journal sort ...</a></li>
+                    <li><a href="">How to change your default entry date fo...</a></li>
+                </ul>
+            </div>
+        </div> <hr>
+        <div class="row">
+            <div class="col-6">
+                <p class="topicTitle">Plans & Billing</p>
+                <h6 class="articles" style="">11 Articles<a href="http://support.penzu.com/customer/en/portal/topics/898452-plans-billing-/articles" style="">View All</a></h6>
+                <ul>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2546871-my-pro-account-was-renewed-and-i-didn-t-want-it-to-be">My Pro account was renewed and I didn&#x...</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525804-how-to-delete-your-account">How to delete your account</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525787-how-to-downgrade-your-account">How to downgrade your account</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525789-how-to-change-your-payment-method">How to change your payment method</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525790-how-to-turn-on-off-auto-renew">How to turn on / off auto-renew</a></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <p class="topicTitle">Account Settings</p>
+                <h6 class="articles" style="">8 Articles<a href="http://support.penzu.com/customer/en/portal/topics/898452-plans-billing-/articles" style="">View All</a></h6>
+                <ul>
+                    <li><a href="">How to turn on / off the podcast player</a></li>
+                    <li><a href="">How to change your name, email address, ...</a></li>
+                    <li><a href="">How to change your time zone</a></li>
+                    <li><a href="">How to change your default journal sort ...</a></li>
+                    <li><a href="">How to change your default entry date fo...</a></li>
+                </ul>
+            </div>
+        </div><hr>
+        <div class="row">
+            <div class="col-6">
+                <p class="topicTitle">Plans & Billing</p>
+                <h6 class="articles" style="">11 Articles<a href="http://support.penzu.com/customer/en/portal/topics/898452-plans-billing-/articles" style="">View All</a></h6>
+                <ul>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2546871-my-pro-account-was-renewed-and-i-didn-t-want-it-to-be">My Pro account was renewed and I didn&#x...</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525804-how-to-delete-your-account">How to delete your account</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525787-how-to-downgrade-your-account">How to downgrade your account</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525789-how-to-change-your-payment-method">How to change your payment method</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525790-how-to-turn-on-off-auto-renew">How to turn on / off auto-renew</a></li>
+                </ul>
+            </div>
+            <div class="col-6">
+                <p class="topicTitle">Account Settings</p>
+                <h6 class="articles" style="">8 Articles<a href="http://support.penzu.com/customer/en/portal/topics/898452-plans-billing-/articles" style="">View All</a></h6>
+                <ul>
+                    <li><a href="">How to turn on / off the podcast player</a></li>
+                    <li><a href="">How to change your name, email address, ...</a></li>
+                    <li><a href="">How to change your time zone</a></li>
+                    <li><a href="">How to change your default journal sort ...</a></li>
+                    <li><a href="">How to change your default entry date fo...</a></li>
+                </ul>
+            </div>
+        </div> <hr>
+        <div class="row">
+            <div class="col-6">
+                <p class="topicTitle">Plans & Billing</p>
+                <h6 class="articles" style="">11 Articles<a href="http://support.penzu.com/customer/en/portal/topics/898452-plans-billing-/articles" style="">View All</a></h6>
+                <ul>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2546871-my-pro-account-was-renewed-and-i-didn-t-want-it-to-be">My Pro account was renewed and I didn&#x...</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525804-how-to-delete-your-account">How to delete your account</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525787-how-to-downgrade-your-account">How to downgrade your account</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525789-how-to-change-your-payment-method">How to change your payment method</a></li>
+                    <li><a href="http://support.penzu.com/customer/en/portal/articles/2525790-how-to-turn-on-off-auto-renew">How to turn on / off auto-renew</a></li>
+                </ul>
+            </div>
+        </div> <hr>
     </div>
+    <div class="col-"><h3 style="font-size : 22px; font-weight : 700; margin: 24px 0 0 30px; padding-bottom: 6px;">Common Questions</h3><hr style="margin: 16px 0 0 30px; width: 237px;">
+        <a class="common" href="">How to Unlock your Journal</a><br>
+        <a class="common" href="">My Pro account was renewed and I<br>didn't want it to be</a><br>
+        <a class="common" href="">PRO and PRO+ Features</a><br>
+        <a class="common" href="">How to Delete your Account</a><br>
+    </div>
+    </div>
+    <div class="container desk" style="margin: 25px 0 0 200px;">
+        Powered by<a href="http://www.desk.com"><img src="<?= base_url("assets/img/salesforce-desk-logo.png")?>" alt="" style="width:10%;"></a>
+    </div><br><br><br>
 </body>
 </html>
