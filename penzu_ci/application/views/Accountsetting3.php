@@ -10,11 +10,13 @@
 
 <body>
     <nav class="navbar navbar-light" id="Bg">
-        <a class="navbar-brand mx-auto pl-5"><img src="assets\img\penzu_white.png" id="logotgh"></a>
+        <a class="navbar-brand mx-auto pl-5"><img src="<?= base_url("assets\img\penzu_white.png") ?>" id="logotgh"></a>
+        <?php foreach($akuns as $row){?>
         <form class="form-inline">
             <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
-            <a href="#"> <button class="btn" type="button" id="C">Sign in</button></a>
+            <a href="#"> <button class="btn" type="button" id="C"><?= $row->first_name?></button></a>
         </form>
+        <?php }?>
     </nav>
     <form name="accountInfoForm">
         <div>
@@ -25,8 +27,8 @@
                 <h2>Delete Account</h2><br>
                 <p>We will permanently delete your Penzu account and all associated journals and entries.<br>
                  Please be sure that you want to delete everything on your account before<br>
-                proceeding.We will not be able to recover your journals or entries after you delete your account!</p>
-                <button id="buton" type="submit" class="btn btn-primary">Upgrade to PRO</button>
+                proceeding.We will not be able to recover your journals or entries after you delete your account!</p><br>
+                <button id="buton" type="submit" class="btn btn-primary">Delete Account</button>
             </div>
         </div>
 </body>
@@ -34,8 +36,8 @@
 <body>
     <div class="link">
         <a style="color:#9098A5;"><< All Journals</a><br><br>
-        <a href="<?= base_url("Accountsetting") ?>">Account Setting</a><br>
-        <a href="<?= base_url("Accountsetting2") ?>">Plans & Billing</a><br>
+        <a href="<?= site_url("AccountController") ?>">Account Setting</a><br>
+        <a href="<?= site_url("AccountController2") ?>">Plans & Billing</a><br>
         <a>Delete Account</a>
     </div>
 </body>

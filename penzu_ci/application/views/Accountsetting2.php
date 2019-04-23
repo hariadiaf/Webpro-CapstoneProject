@@ -10,11 +10,13 @@
 
 <body>
     <nav class="navbar navbar-light" id="Bg">
-        <a class="navbar-brand mx-auto pl-5"><img src="assets\img\penzu_white.png" id="logotgh"></a>
+        <a class="navbar-brand mx-auto pl-5"><img src="<?= base_url("assets\img\penzu_white.png") ?>" id="logotgh"></a>
+        <?php foreach($akuns as $row){?>
         <form class="form-inline">
             <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
-            <a href="#"> <button class="btn" type="button" id="C">Sign in</button></a>
+            <a href="#"> <button class="btn" type="button" id="C"><?= $row->first_name?></button></a>
         </form>
+        <?php }?>
     </nav>
     <form name="accountInfoForm">
         <div>
@@ -32,8 +34,8 @@
 <body>
     <div class="link">
         <a style="color:#9098A5;"><< All Journals</a><br><br>
-        <a href="<?= base_url("Accountsetting") ?>">Account Setting</a><br>
+        <a href="<?= site_url("AccountController/edit/").$this->session->userdata('id') ?>">Account Setting</a><br>
         <a>Plans & Billing</a><br>
-        <a href="<?= base_url("Accountsetting3") ?>">Delete Account</a>
+        <a href="<?= site_url("AccountController3") ?>">Delete Account</a>
     </div>
 </body>

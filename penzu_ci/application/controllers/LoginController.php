@@ -12,10 +12,11 @@ class LoginController extends CI_Controller {
         $password = $this->input->post('pass',true);
 
         $res = $this->LoginModel->getUserLogin($email,$password);
+        
         if($res != null){
-            echo "login berhasil";
+            redirect('AccountController');
         }else{
-            echo "login gagal";
+            redirect('LoginController');
         }
     }
 }

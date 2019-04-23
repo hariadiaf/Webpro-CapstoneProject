@@ -77,7 +77,7 @@
 
   <style media="screen">
   body {
-    background-image: url("assets/img/wood.jpg");
+    background-image: url("../assets/img/wood.jpg");
   }
   </style>
 
@@ -91,7 +91,7 @@
             hariadi's journal
           </button>
           <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-            <button class="dropdown-item" type="button"> <img src="<?= base_url('assets/img/home.png') ?>" width="16px"> Home</button>
+            <button href="<?= site_url('Jurnal_Controller') ?>" class="dropdown-item" type="button"> <img src="<?= base_url('assets/img/home.png') ?>" width="16px"> Home</button>
             <button class="dropdown-item" type="button">hariadi's journal</button>
           </div>
           <div class="input-group flex-nowrap" style="display: inherit; background-color : #B00B1B; border-radius : 20px;">
@@ -113,7 +113,7 @@
       <?php foreach ($entri as $row) {?>
         <a href="<?= base_url('index.php/Entries_Controller/getDataJurnalWhere/').$row->idJurnal?>" style="font-family : arial; font-size : 20px;"><?= $row->title?></a>
         <input type="checkbox" name="date" value="date" style="margin-left : 32px;"><?= $row->date?><br>
-      <?php
+        <?php
       }?>
     </div>
 
@@ -121,7 +121,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="#" class="btn " style="margin-left : 8px;"> <img src="<?= base_url('assets/img/home.png') ?>" width="20px"> </a>
+    <a href="<?= site_url('Jurnal_Controller') ?>" class="btn " style="margin-left : 8px;"> <img src="<?= base_url('assets/img/home.png') ?>" width="20px"> </a>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
@@ -186,35 +186,68 @@
 
 </div>
 <style media="screen">
-  #title{
+#title{
 
-  }
+}
 </style>
-<form action="<?= base_url('index.php/Entries_Controller/tambahEntries')?>" method="post">
-<div id="title" class="d-flex flex-column container">
-  <input type="text" name="title" value="" placeholder="Entry Title" style="
-  font-family : times new roman;
-  font-size : 32px;
-  padding : 16px 24px;
-  border-radius :2px;">
-  <div class="" style="background-color : #ffffff; border-radius : 2px;">
-    <h6><img src="<?= base_url('assets/img/calendar.png') ?>" width="20px"> Mon. 4/22/2019</h6>
-    <input type="submit" class="float-right" name="btnChangeThemes" style="background-color : #484848; padding : 6px 8px;
-    text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;" value="Save"/>
-    <a href="#" class="float-right" name="btnChangeThemes" style="background-color : #484848; padding : 6px 8px;
-    text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;">Edit</a>
-    <a href="#" class="float-right" name="btnChangeThemes" style="background-color : #EF4228; padding : 6px 8px;
-    text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;">Delete</a>
-  </div>
-  <textarea name="deskripsi" id="name" rows="8" cols="80" placeholder="Your Entry Here" style="
-  font-family : times new roman;
-  font-size : 16px;
-  border-radius : 2px;
-  padding : 16px 24px;"></textarea>
-</form>
+
+
+
+  <?php if($this->uri->segment('2') == "getDataJurnalWhere"){?>
+    <form>
+    <?php foreach($ent as $row){?>
+      <div id="title" class="d-flex flex-column container">
+        <input type="text" name="title" placeholder="Entry Title" style="
+        font-family : times new roman;
+        font-size : 32px;
+        padding : 16px 24px;
+        border-radius :2px;" value="<?= $row->title?>">
+        <div class="" style="background-color : #ffffff; border-radius : 2px;">
+          <h6><img src="<?= base_url('assets/img/calendar.png') ?>" width="20px"> Mon. 4/22/2019</h6>
+          <input type="submit" class="float-right" name="btnChangeThemes" style="background-color : #484848; padding : 6px 8px;
+          text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;" value="Save"/>
+          <a href="#" class="float-right" name="btnChangeThemes" style="background-color : #484848; padding : 6px 8px;
+          text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;">Edit</a>
+          <a href="#" class="float-right" name="btnChangeThemes" style="background-color : #EF4228; padding : 6px 8px;
+          text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;">Delete</a>
+        </div>
+        <textarea name="deskripsi1" id="name" rows="8" cols="80" placeholder="Your Entry Here" style="
+        font-family : times new roman;
+        font-size : 16px;
+        border-radius : 2px;
+        padding : 16px 24px;"><?= $row->text?></textarea>
+    <?php } ?>
+    </form>
+  <?php }else{ ?>
+    <form action="<?= base_url('index.php/Entries_Controller/tambahEntries')?>" method="post">
+      <div id="title" class="d-flex flex-column container">
+        <input type="text" name="title" value="" placeholder="Entry Title" style="
+        font-family : times new roman;
+        font-size : 32px;
+        padding : 16px 24px;
+        border-radius :2px;">
+        <div class="" style="background-color : #ffffff; border-radius : 2px;">
+          <h6><img src="<?= base_url('assets/img/calendar.png') ?>" width="20px"> Mon. 4/22/2019</h6>
+          <input type="submit" class="float-right" name="btnChangeThemes" style="background-color : #484848; padding : 6px 8px;
+          text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;" value="Save"/>
+          <a href="#" class="float-right" name="btnChangeThemes" style="background-color : #484848; padding : 6px 8px;
+          text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;">Edit</a>
+          <a href="#" class="float-right" name="btnChangeThemes" style="background-color : #EF4228; padding : 6px 8px;
+          text-decoration: none;  font-weight : bold; border-radius : 6px; font-style : bold; color : #ffffff; margin-right : 8px;">Delete</a>
+        </div>
+        <textarea name="deskripsi" id="name" rows="8" cols="80" placeholder="Your Entry Here" style="
+        font-family : times new roman;
+        font-size : 16px;
+        border-radius : 2px;
+        padding : 16px 24px;"></textarea>
+      </form>
+    <?php } ?>
   <script src="https://cdn.ckeditor.com/4.11.4/standard/ckeditor.js"></script>
   <script>
-          CKEDITOR.replace( 'deskripsi');
+  CKEDITOR.replace( 'deskripsi');
+  </script>
+  <script>
+  CKEDITOR.replace( 'deskripsi1');
   </script>
 </div>
 </body>
