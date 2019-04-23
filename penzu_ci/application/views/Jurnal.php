@@ -68,7 +68,7 @@
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
               <button class="dropdown-item" type="button">Penzu Podcast</button>
-              <button class="dropdown-item" type="button">Account</button>
+              <a href="<?= site_url("AccountController")?>" class="dropdown-item">Account</a>
               <button class="dropdown-item" type="button">Help & FAQs</button>
               <button class="dropdown-item" type="button">Pro Support</button>
               <button class="dropdown-item" type="button">Logout  </button>

@@ -14,7 +14,7 @@ class LoginController extends CI_Controller {
         $res = $this->LoginModel->getUserLogin($email,$password);
         
         if($res != null){
-            redirect('AccountController');
+            redirect('JurnalController');
         }else{
             redirect('LoginController');
         }
