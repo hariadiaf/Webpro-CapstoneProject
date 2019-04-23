@@ -11,10 +11,12 @@
 <body>
     <nav class="navbar navbar-light" id="Bg">
         <a class="navbar-brand mx-auto pl-5"><img src="<?= base_url("assets\img\penzu_white.png") ?>" id="logotgh"></a>
+        <?php foreach($akuns as $row){?>
         <form class="form-inline">
             <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
-            <a href="#"> <button class="btn" type="button" id="C">Sign in</button></a>
+            <a href="#"> <button class="btn" type="button" id="C"><?= $row->first_name?></button></a>
         </form>
+        <?php }?>
     </nav>
     <form name="accountInfoForm">
         <div>
