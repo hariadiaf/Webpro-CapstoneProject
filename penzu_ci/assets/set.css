@@ -13,8 +13,6 @@ body {
     z-index: 900;
 }
 
-.link {
-    margin: -750px 0 0 200px;
 }
 
 #logotgh{
@@ -72,8 +70,6 @@ width : 275.953px;
 border : 1px solid  #CBCBD1;
 padding : 6px 12px 6px 12px;
 display : block;
-cursor : text;
-transform : none;
 transition : border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s, -webkit-box-shadow 0.15s ease-in-out 0s;
 box-sizing : border-box;
 border-top-left-radius : 3px;

@@ -10,33 +10,35 @@
 
 <body>
     <nav class="navbar navbar-light" id="Bg">
-        <a class="navbar-brand mx-auto pl-5"><img src="assets\img\penzu_white.png" id="logotgh"></a>
+        <a class="navbar-brand mx-auto pl-5"><img src="<?= base_url("assets\img\penzu_white.png") ?>" id="logotgh"></a>
+        <?php foreach($akuns as $row){?>
         <form class="form-inline">
             <a href="#"> <button class="btn" type="button" id="B">Go PRO</button></a>
-            <a href="#"> <button class="btn" type="button" id="C">Sign in</button></a>
+            <a href="#"> <button class="btn" type="button" id="C"><?= $row->first_name?></button></a>
         </form>
+        <?php }?>
     </nav>
-    <form name="accountInfoForm">
+    <form action="<?= site_url("AccountController/update") ?>" method="post">
         <div>
             <div class="alert ng-binding alert-danger ng-hide" style="margin-bottom: 20px;"></div>
         </div>
         <div class="form-group">
+        <?php foreach($akuns as $row){?>
             <div>
                 <h2>Account Info</h2>
                 <label>First Name</label>
                 <label id="last">Last Name</label>
-                <input class="form-control ng-pristine ng-valid ng-not-empty ng-touched" id="firstName" type="text"
-                    name="firstName">
-                <input class="form-control ng-pristine ng-valid ng-not-empty ng-touched" id="lastName" type="text"
-                    name="LastName">
+                <input type="text" class="form-control" id="firstName" name="firstName" value="<?= $row->first_name?>">
+                <input type="text" class="form-control" id="lastName" name="lastName" value="<?= $row->last_name?>">
             </div>
             <div>
                 <label id="label3" for="exampleInputEmail1">EMAIL ADDRESS</label>
-                <input type="email" class="form-control" name="email" id="email">
+                <input type="email" class="form-control" name="email" id="email" value="<?= $row->email?>">
             </div>
             <button id="buton" type="submit" class="btn btn-primary">Save</button>
             <button id="buton2" type="submit" class="btn btn-primary">Change Password</button>
         </div>
+        <?php }?>
         <br><br><br>
         <hr style="width: 42%; margin: 2% 0 0 35%">
         <div class="form-group">
@@ -78,13 +80,15 @@
 
         </div>
         </div>
-</body>
+    
+    </form>
+    
 
-<body>
-    <div class="link">
-        <a style="color:#9098A5;"><< All Journals</a><br><br>
-        <a>Account Setting</a><br>
-        <a href="<?= base_url("Accountsetting2") ?>">Plans & Billing</a><br>
-        <a href="<?= base_url("Accountsetting3") ?>">Delete Account</a>
+    <div style="position : absolute; bottom: 68%; left: 20%;">
+        <a style="color:#9098A5;">
+            << All Journals</a> <br><br>
+                <a href="">Account Setting</a><br>
+                <a href="<?= site_url("AccountController2")?>">Plans & Billing</a><br>
+                <a href="<?= site_url("AccountController3") ?>">Delete Account</a>
     </div>
 </body>
