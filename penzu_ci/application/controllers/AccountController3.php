@@ -40,4 +40,9 @@ class AccountController3 extends CI_Controller {
         redirect('AccountController3');
     
 }
+        function hapus($id_user){
+        $where = array('id' => $id_user);
+        $this->AccountModel->hapus_data($where,'akuns');
+        redirect('AccountController3');
+}
 }

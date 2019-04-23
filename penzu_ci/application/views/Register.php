@@ -7,7 +7,7 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="<?= base_url("assets/Regis.css") ?>">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
-    <link rel="icon" type="image/png" href="https://penzu.desk.com/customer/portal/theme_attachments/29628?cb=1436978161970">   
+    <link rel="icon" type="image/png" href="<?= base_url("assets/img/favicon.ico")?>">
 </head>
 
 <body>
