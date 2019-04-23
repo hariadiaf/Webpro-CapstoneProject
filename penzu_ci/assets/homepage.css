@@ -184,43 +184,6 @@
     padding : 18px 30px 18px 30px;
     max-width : 300px;
 }
-.footerdalam{
-    font-family : "Open Sans", helvetica, sans-serif;
-    font-size : 14px;
-    background-color :  #2F3940;
-    color :  #FFFFFF;
-    height: 243px;
-    width : 912px;
-    padding : 40px 0 40px 0;
-    margin-left: 234px;
-}
-.footerdalam p{
-    font-family : "Open Sans", helvetica, sans-serif;
-    font-size : 15px;
-    font-weight : 700;
-    line-height : 16.5px;
-}
-
-.footerdalam a{
-    font-family : "Open Sans", helvetica, sans-serif;
-    font-size : 14px;
-    line-height : 1.8;
-    letter-spacing: 0.5px;
-    text-align : left;
-    color :  #FFFFFF;
-    height : 25px;
-}
-.footerdalam hr{
-background-color :   rgb(107, 106, 106);
-margin-top: -10px;
-}
-footer{
-    background-color :  #2F3940;
-    color :  #4B525B;
-    height : 260px;
-    width : 1349px;
-    min-height : 166.75px;
-}
 .privacy{
     font-family : "Open Sans", helvetica, sans-serif;
     font-size : 16px;
@@ -429,4 +392,65 @@ footer{
     color :  #FFFFFF;
     height : 42px;
     width : 220px;
+}
+
+
+
+.footerdalam{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    background-color :  #2F3940;
+    color :  #FFFFFF;
+    height: 243px;
+    width : 912px;
+    padding : 40px 0 40px 0;
+    margin-left: 234px;
+}
+.footerdalam p{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 15px;
+    font-weight : 700;
+    line-height : 16.5px;
+}
+
+.footerdalam a{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    text-decoration: none;
+    line-height : 1.8;
+    letter-spacing: 0.5px;
+    text-align : left;
+    color :  #FFFFFF;
+    height : 25px;
+}
+.footerdalam hr{
+    background-color :   rgb(107, 106, 106);
+    margin-top: -10px;
+}
+footer{
+    background-color :  #2F3940;
+    color :  #4B525B;
+    height : 260px;
+    width : 1349px;
+    min-height : 166.75px;
+}
+a {
+    position: relative;
+    z-index: 1;
+}
+a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #9098A5;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.fot a:hover:before {
+  visibility: visible;
+  width: 100%;
 }

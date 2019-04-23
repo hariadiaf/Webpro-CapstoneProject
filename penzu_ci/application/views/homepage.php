@@ -8,6 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <meta charset="utf-8">
         <link rel="stylesheet" href="assets/homepage.css">
+        <link rel="icon" type="image/png" href="https://penzu.desk.com/customer/portal/theme_attachments/29628?cb=1436978161970">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         <title>Write In Private: Free Online Diary And Personal Journal | Penzu</title>
     </head>
@@ -305,7 +306,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <footer>
             <div class="container footerdalam">
             <div class="row">
-                <div class="col-" style="width: 183px;">
+                <div class="col- fot" style="width: 183px;">
                     <p>Penzu</p><hr>
                     <a href="<?= site_url("RegisterController") ?>">Free Signup</a><br>
                     <a href="">Penzu PRO</a><br>
@@ -315,13 +316,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-" style="width: 363px; padding-left: 43px;">
                     <p>Journals</p><hr>
                     <div class="row">
-                        <div class="col">
+                        <div class="col fot">
                             <a href="">Journal Prompts</a><br>
                             <a href="">What is a Journal</a><br>
                             <a href="">Pregnancy Journal</a><br>
                             <a href="">Reflective Journal</a><br>
                         </div>
-                        <div class="col">
+                        <div class="col fot">
                             <a href="">Bible Journal</a><br>
                             <a href="">Dream Journal</a><br>
                             <a href="">Journal Examples</a><br>
@@ -332,13 +333,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <div class="col-" style="width: 363px; padding-left: 43px;">
                     <p>Diaries</p><hr>
                     <div class="row">
-                        <div class="col">
+                        <div class="col fot">
                             <a href="">Secret Diary</a><br>
                             <a href="">Electronic Diary</a><br>
                             <a href="">Diary Templates</a><br>
                             <a href="">Wedding Diary</a><br>
                         </div>
-                        <div class="col">
+                        <div class="col fot">
                             <a href="">School Diary</a><br>
                             <a href="">Health Diary</a><br>
                             <a href="">Food Diary</a><br>

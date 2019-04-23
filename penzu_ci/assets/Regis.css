@@ -1,7 +1,6 @@
 body {
     overflow: scroll;
 }
-
 #Bg {
     background-color: #f23f21;
     height: 50px;
@@ -10,24 +9,16 @@ body {
     left: 0;
     right: 0;
     z-index: 900;
+    -moz-box-shadow:    2px 2px 4px 5px rgba(88, 88, 88, 0.144);
+    -webkit-box-shadow: 2px 2px 4px 5px rgba(88, 88, 88, 0.144);
+    box-shadow:         2px 2px 4px 5px rgba(88, 88, 88, 0.144);
 }
 
 #logotgh{
-    position : absolute;
-    top : 14px;
-    bottom : 9px;
-    right : 628.75px;
-    left : 674.5px;
-    display : block;
-    height : 27px;
+    margin : -8px 0 0 67%;
+    height : 27.5px;
     width : 91.5px;
-    margin : 0 0 0 -46px;
-    height : 27px;
-    width : 91.5px;
-    margin : 0 0 0 -46px;
-    width: 100px;
 }
-
 
 #B {
     font-family : "Open Sans", helvetica, sans-serif;
@@ -42,14 +33,17 @@ body {
 
 #C {
     font-family : "Open Sans", helvetica, sans-serif;
-    font-size : 13px;
+    font-size : 14px;
     font-weight : 600;
     line-height : 19.6px;
     text-decoration : underline solid rgb(255, 255, 255);
     color :  #FFFFFF;
     height : 31px;
-    width : 73.5313px;
+    margin: -8px 5px 0 0;
     padding : 6px 8px 6px 16px;
+    border-left-color: rgba(0, 0, 0, 0.26);
+    border-left-width: 0.5px;
+    border-radius: 0;
 }
 
 #bungkus {
@@ -163,4 +157,66 @@ h1 {
 #lastname {
     position: relative;
     left: 4.5%;   
+}
+
+
+.footerdalam{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    background-color :  #2F3940;
+    color :  #FFFFFF;
+    height: 243px;
+    width : 912px;
+    padding : 40px 0 40px 0;
+    margin-left: 234px;
+}
+.footerdalam p{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 15px;
+    font-weight : 700;
+    line-height : 16.5px;
+}
+
+.footerdalam a{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    text-decoration: none;
+    line-height : 1.8;
+    letter-spacing: 0.5px;
+    text-align : left;
+    color :  #FFFFFF;
+    height : 25px;
+}
+.footerdalam hr{
+    background-color :   rgb(107, 106, 106);
+    margin-top: -10px;
+}
+footer{
+    background-color :  #2F3940;
+    color :  #4B525B;
+    height : 260px;
+    width : 1349px;
+    min-height : 166.75px;
+    margin: 50px 0 0 0;
+}
+a {
+    position: relative;
+    z-index: 1;
+}
+
+a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #9098A5;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.fot a:hover:before {
+  visibility: visible;
+  width: 100%;
 }

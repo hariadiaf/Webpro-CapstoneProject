@@ -6,22 +6,15 @@
     left: 0;
     right: 0;
     z-index: 900;
+    -moz-box-shadow:    2px 2px 4px 5px rgba(88, 88, 88, 0.144);
+    -webkit-box-shadow: 2px 2px 4px 5px rgba(88, 88, 88, 0.144);
+    box-shadow:         2px 2px 4px 5px rgba(88, 88, 88, 0.144);
 }
 
 #logotgh{
-    position : absolute;
-    top : 14px;
-    bottom : 9px;
-    right : 628.75px;
-    left : 674.5px;
-    display : block;
-    height : 27px;
+    margin : -8px 0 0 67%;
+    height : 27.5px;
     width : 91.5px;
-    margin : 0 0 0 -46px;
-    height : 27px;
-    width : 91.5px;
-    margin : 0 0 0 -46px;
-    width: 100px;
 }
 
 
@@ -34,18 +27,22 @@
     background-color :  #FFFFFF;
     color: #f23f21;
     padding : 6px 8px 6px 8px;
+    margin: -10px 20px 0 0;
 }
 
 #C {
     font-family : "Open Sans", helvetica, sans-serif;
-    font-size : 13px;
+    font-size : 14px;
     font-weight : 600;
     line-height : 19.6px;
     text-decoration : underline solid rgb(255, 255, 255);
     color :  #FFFFFF;
     height : 31px;
-    width : 73.5313px;
+    margin: -8px 5px 0 0;
     padding : 6px 8px 6px 16px;
+    border-left-color: rgba(0, 0, 0, 0.26);
+    border-left-width: 0.5px;
+    border-radius: 0;
 }
 
 #bungkus {
@@ -54,16 +51,16 @@
     background-image: url("assets\img\wood.jpg");
 }
 #form {
-    width: 400px;
-    max-width: 540px;
-    margin: 30px auto 50px;
     box-shadow: 0 0 6px rgba(0,0,0,.25);
     border-radius: 4px;
-    margin-top: 100px;
     background: #f5f5f5;
     border-bottom: 1px solid #e6e6e6;
     padding: 20px 50px;
-    margin: 0 -50px 30px;
+    background-color: #FFFFFF;
+    height : 364px;
+    width : 540px;
+    margin : -10px 405px 50px 405px;
+    max-width : 540px;
 }
 body {
     background-image: url("../assets/img/wood.jpg");
@@ -86,16 +83,8 @@ h3 {
     width : 540px;
     border-bottom : 1px solid  #E6E6E6;
     padding : 20px 50px 20px 50px;
-    margin-top: -4.6%;
+    margin-top: -8%;
     margin-left: -11.3%;
-}
-
-#form {
-    background-color: #FFFFFF;
-    height : 379px;
-    width : 540px;
-    margin : 30px 405px 50px 405px;
-    max-width : 540px;
 }
 
 #label {
@@ -128,10 +117,70 @@ h3 {
    
 }
 
+
 .form-control {
     height : 48px;
     width : 440px;
     border : 1px solid  #9FA4AA;
     margin : 0 0 10px 0;
     padding : 8px 10px 8px 10px;
+}
+
+.footerdalam{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    background-color :  #2F3940;
+    color :  #FFFFFF;
+    height: 243px;
+    width : 912px;
+    padding : 40px 0 40px 0;
+    margin-left: 234px;
+}
+.footerdalam p{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 15px;
+    font-weight : 700;
+    line-height : 16.5px;
+}
+
+.footerdalam a{
+    font-family : "Open Sans", helvetica, sans-serif;
+    font-size : 14px;
+    text-decoration: none;
+    line-height : 1.8;
+    letter-spacing: 0.5px;
+    text-align : left;
+    color :  #FFFFFF;
+    height : 25px;
+}
+.footerdalam hr{
+    background-color :   rgb(107, 106, 106);
+    margin-top: -10px;
+}
+footer{
+    background-color :  #2F3940;
+    color :  #4B525B;
+    height : 260px;
+    width : 1349px;
+    min-height : 166.75px;
+}
+a {
+    position: relative;
+    z-index: 1;
+}
+a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #9098A5;
+  visibility: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.fot a:hover:before {
+  visibility: visible;
+  width: 100%;
 }

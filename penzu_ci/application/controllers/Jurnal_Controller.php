@@ -20,9 +20,13 @@ class Jurnal_Controller extends CI_Controller {
 	 */
 	public function index()
 	{
+<<<<<<< HEAD
 
 
 			$this->load->view('Register');
 
+=======
+		$this->load->view('Register');
+>>>>>>> b2773f7376839101b810b9ba6257f56bca8a8b15
 	}
 }
