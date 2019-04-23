@@ -17,6 +17,21 @@ p.support{
 body{
     background-color: #F5F5F5;
 }
+.viewall{
+  font-family : "Open Sans", Arial, Helvetica, sans-serif;
+  font-size : 11px;
+  background-color: #E5E6E7;
+  color: #4B525B;
+  font-weight : 700;
+  height : 15px;
+  width : 50.4688px;
+  margin : -2px 0 0 9px;
+  padding : 3px 7px 3px 7px;
+  border-radius: 24px;
+}
+.viewall:hover{
+  background-color :  #2E86C1;
+}
 .bodysupport{
     font-family : "Open Sans", Arial, Helvetica, sans-serif;
     font-size : 13px;
@@ -73,8 +88,24 @@ font-size : 13px;
 text-align : left;
 margin: 0 0 0 30px;
 }
+#imgart{
+  width: 5.5%;
+  margin-top: -3.3px;
+  margin-left: -0.7px;
+}
 ul{
-  margin-left: -18px;
+  margin-left: -20px; 
+  padding-top: 7px;
+}
+.col-6 li{
+  margin: 0 0 3px 0;
+}
+.articles{
+  font-family : "Open Sans", Arial, Helvetica, sans-serif;
+  font-size : 13px;
+  font-weight : 700;
+  text-transform: uppercase;
+  margin: 30px 0 0 0;
 }
 .desk{
 font-family : "Open Sans", Arial, Helvetica, sans-serif;
@@ -87,7 +118,7 @@ color :  #999999;
   font-size : 18px;
   font-weight : 700;
   color :  #4B525B;
-  margin: 0 0 0 -5px;
+  margin: 3px 0 0 -1px;
 }
 /* LOADER */
 

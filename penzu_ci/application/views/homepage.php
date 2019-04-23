@@ -7,8 +7,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <head>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <meta charset="utf-8">
-        <link rel="stylesheet" href="assets/homepage.css">
-        <link rel="icon" type="image/png" href="https://penzu.desk.com/customer/portal/theme_attachments/29628?cb=1436978161970">
+        <link rel="stylesheet" href="<?= base_url("assets/homepage.css") ?>">
+        <link rel="icon" type="image/png" href="<?= base_url("assets/img/favicon.ico")?>">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
         <title>Write In Private: Free Online Diary And Personal Journal | Penzu</title>
     </head>
@@ -17,6 +17,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script>
+        //loader
+        $(document).ready(function() {
+            setTimeout(function() {
+                $(".preloader").fadeOut("slow");
+            }, 700);
+        });
         // jQuery untuk hide navbar
         (function ($) {
         $(document).ready(function(){            
@@ -35,11 +41,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         }(jQuery));
     </script>
     <body>
+        <div class="preloader">
+            <div class="loading">
+                <img src="<?= base_url("assets/img/logo_default-free.png")?>" width='149' height='44' style="margin-top: -100px;">
+                <div class="spinner" style="margin-top: -5%; background-color: #E72D0E; padding: 4px 4px 4px 4px; ">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                </div>
+            </div>
+        </div>
         <div class="container">
         <nav class="navbar border-bottom navbar-expand-sm fixed-top" style='background-color:white;'>
             <div class="collapse navbar-collapse" id="navbarNav" style='margin-left: 14.7%;'>
                 <a class="navbar-brand" href="#" style='margin-top: -3.5px;'>
-                    <img src="assets/img/pz-logo__red.png"  width="106" height="30.42" class="d-inline-block align-top" alt="">
+                    <img src="<?=base_url('assets/img/pz-logo__red.png')?>" width="106" height="30.42" class="d-inline-block align-top" alt="">
                     <span style='padding-left: 8px; font-family : "Open Sans", helvetica, sans-serif; font-size : 14px; color :  #8E8E93; padding-bottom: 5px;'>Your Private Online Journal</span>
                 </a>
             </div>
@@ -108,7 +124,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="part1">
             <div class="container logoplus">
                 <center>
-                    <img id="logomain" src="assets/img/pz-logo__red.png" alt="">
+                    <img id="logomain" src="<?= base_url("assets/img/pz-logo__red.png") ?>" alt="">
                     <br>
                     <p id="tagline">Your private, 100% customizable online journal.
                         <br> Loved by over 2 million writers around the world.</p>
@@ -155,12 +171,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <a class="btn  getstarted2" href="" data-toggle="modal" data-target="#exampleModal">Get Started</a>
                 </div>
                 <div class="col-sm">
-                    <img id="priv-1" src="assets/img/feature_locking.jpg" alt="" style="height : 377px; width : 361px; margin-left: 19.2%; margin-top: 11%;">
+                    <img id="priv-1" src="<?= base_url("assets/img/feature_locking.jpg") ?>" alt="" style="height : 377px; width : 361px; margin-left: 19.2%; margin-top: 11%;">
                 </div>
             </div>
             <div class="row">
                 <div class="col-">
-                    <img id="priv-1" src="assets/img/feature_devices.jpg" alt="" style="height : 495px; width : 828px; margin-left: -43.5%; margin-top: 5%;">
+                    <img id="priv-1" src="<?=base_url('assets/img/feature_devices.jpg')?>" alt="" style="height : 495px; width : 828px; margin-left: -43.5%; margin-top: 5%;">
                 </div>
                 <div class="col-" style="margin-left: -29%; margin-top: 17.5%;">
                     <h2 style="padding-bottom: 8px;">Write from Anywhere</h2>
@@ -173,21 +189,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row" style="width: 952px; height: 208px; margin: auto; margin-left: 98px;">
             <div class="col- kolomfeatures">
                 <div class="imagefeatures">
-                    <img src="assets/img/feature-icon__security2.png" alt="" style="height : 80px; width : 80px;">
+                    <img src="<?= base_url('assets/img/feature-icon__security2.png')?>" alt="" style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>100% Private</div>
                 <div class='detail-features'>Designed to focus on privacy, your<br>entries are totally private by default!</div>
             </div>
             <div class="col- kolomfeatures">
                 <div class="imagefeatures">
-                    <img src="assets/img/feature-icon__mobile.png" alt=""style="height : 80px; width : 80px;">
+                    <img src="<?= base_url('assets/img/feature-icon__mobile.png')?>" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Available Everywhere</div>
                 <div class='detail-features'>Enjoy Penzu on the move. Available<br>for iOS and Android and totally free!</div>
             </div>
             <div class="col- kolomfeatures">
                 <div class="imagefeatures">
-                    <img src="assets/img/feature-icon__reminder.png" alt=""style="height : 80px; width : 80px;">
+                    <img src="<?= base_url('assets/img/feature-icon__reminder.png')?>" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Never Forget to Write</div>
                 <div class='detail-features'>Custom email reminders help you<br>make sure you never forget to<br>write.</div>
@@ -196,21 +212,21 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <div class="row" style="width: 952px; height: 208px; margin: auto;  margin-left: 98px; margin-top: 25px;">
             <div class="col- kolomfeatures">
                 <div class="imagefeatures">
-                    <img src="assets/img/feature-icon__customize.png" alt=""style="height : 80px; width : 80px;">
+                    <img src="<?= base_url('assets/img/feature-icon__customize.png')?>" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Fully Customizable Diary</div>
                 <div class='detail-features'>Make each <span><a href="">journal</a></span> your own with<br>custom covers, backgrounds, and<br>fonts.</div>
             </div>
             <div class="col- kolomfeatures">
                 <div class="imagefeatures">
-                    <img src="assets/img/feature-icon__search.png" alt=""style="height : 80px; width : 80px;">
+                    <img src="<?=base_url('assets/img/feature-icon__search.png')?>" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Smart Journal Search</div>
                 <div class='detail-features'>Quickly and easily search through<br>your journals, entries, and tags.</div>
             </div>
             <div class="col- kolomfeatures">
                 <div class="imagefeatures">
-                    <img src="assets/img/feature-icon__security.png" alt=""style="height : 80px; width : 80px;">
+                    <img src="<?= base_url('assets/img/feature-icon__security.png')?>" alt=""style="height : 80px; width : 80px;">
                 </div>
                 <div class='title-features'>Military Grade Security</div>
                 <div class='detail-features'>Further protect your diary with<br>military-grade 256-bit AES<br>encryption.</div>
@@ -285,17 +301,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             </div>
         </center>
         <div class="container penzu-mobile">
-                <img src="assets/img/mobile-app-icon.png" alt=""style="margin-left: 53.5%; margin-top: 15%; height: 112px; width: 112px;">
+                <img src="<?= base_url('assets/img/mobile-app-icon.png')?>" alt=""style="margin-left: 53.5%; margin-top: 15%; height: 112px; width: 112px;">
                 <div id="penzu-mobile-text" style='margin-top: -99px; font-family : "Open Sans", helvetica, sans-serif; font-size : 16px; line-height : 23.2px; color:  #4B525B;'>
                 <span style='font-family : "Open Sans", helvetica, sans-serif; font-size : 20px; font-weight : 600; color:  #4B525B;'>Penzu Mobile</span>
                 <br>Take your journal wherever you go<br>with our apps for iPhone, iPad, and<br>Android phones & tablets.
                 </div>
                 <div class="landing_mobile">
                     <a class="mobile-btn apple" href="https://itunes.apple.com/us/app/penzu/id452674732?mt=8" target="_self">
-                        <img ng-src="assets/img/btn-app-store.png" alt="Apple App Store Link to Penzu Mobile App" src="assets/img/btn-app-store.png">
+                        <img ng-src="<?= base_url("assets/img/btn-app-store.png")?>" alt="Apple App Store Link to Penzu Mobile App" src="assets/img/btn-app-store.png">
                     </a>
                     <a class="mobile-btn play" href="https://play.google.com/store/apps/details?id=com.penzu.android&amp;hl=en" target="_self">
-                        <img ng-src="assets/img/btn-play-store.png" alt="Google Play Store Link to Penzu Mobile App" src="assets/img//btn-play-store.png">
+                        <img ng-src="<?= base_url("assets/img/btn-play-store.png")?>" alt="Google Play Store Link to Penzu Mobile App" src="assets/img//btn-play-store.png">
                     </a>
                 </div>
         </div>
