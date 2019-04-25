@@ -16,13 +16,7 @@ function __construct(){
 
 	}
   public function tambahEntries(){
-    $valid = $this->form_validation;
-    $valid->set_rules("title","title");
-    $valid->set_rules("deskripsi","deskripsi");
-
-    if($this->form_validation->run() == false){
-      redirect("Entries_Controller");
-    }else{
+    
         $data = array(
             "title" => $this->input->post('title'),
             "text" => $this->input->post('deskripsi'),
@@ -30,7 +24,6 @@ function __construct(){
         );
         $this->EntriesModel->addJurnal($data);
         redirect("Entries_Controller");
-    }
 }
 
 public function hapusEntries($id){

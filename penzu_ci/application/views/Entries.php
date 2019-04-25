@@ -105,7 +105,7 @@
 
       </div>
       <a href="#" style="font-family : arial; font-size : 20px;"> <img src="<?= base_url('assets/img/add.png') ?>" width="20px"> New Entry</a>
-      <a href="#" style="font-family : arial; font-size : 20px;"> <img src="<?= base_url('assets/img/list2.png')  ?>" width="20px"> View All Entries</a>
+      <a href="<?= site_url('viewallentries_controller') ?>" style="font-family : arial; font-size : 20px;"> <img src="<?= base_url('assets/img/list2.png')  ?>" width="20px"> View All Entries</a>
       <a href="#" style="font-family : arial; font-size : 20px;"> <img src="<?= base_url('assets/img/star.png') ?>" width="20px"> View Starred Entries</a>
       <a href="#" style="font-family : arial; font-size : 20px;">Test</a>
       <input type="checkbox" name="date" value="date" style="margin-left : 32px;"> Sat. 4/20/19<br>
@@ -121,7 +121,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a href="<?= site_url('Jurnal_Controller') ?>" class="btn " style="margin-left : 8px;"> <img src="<?= base_url('assets/img/home.png') ?>" width="20px"> </a>
+    <a href="<?= site_url('JurnalController') ?>" class="btn " style="margin-left : 8px;"> <img src="<?= base_url('assets/img/home.png') ?>" width="20px"> </a>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 
@@ -193,7 +193,7 @@
 
 
 
-  <?php if($this->uri->segment('2') == "getDataJurnalWhere"){?>
+<?php if($this->uri->segment('2') == "getDataJurnalWhere"){?>
     <form>
     <?php foreach($ent as $row){?>
       <div id="title" class="d-flex flex-column container">

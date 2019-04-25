@@ -7,15 +7,7 @@
             $this->db->insert('entries',$data);
        }
        function getDataJurnal(){
-      		$this->db->select("idJurnal,title,text,date");
-      		$this->db->from("entries");
-      		$query = $this->db->get();
-      		if($query->num_rows() != 0){
-      			return $query->result();
-            print_r($query->result());
-      		}else{
-      			return false;
-      		}
+          return $this->db->get("entries")->result();
       	}
        // public function EditJurnal($data, $where)
        // {
